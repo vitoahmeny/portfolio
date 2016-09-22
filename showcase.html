@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vito Fan's Projects</title>
+	<link rel="stylesheet" type="text/css" href="showcase.css">
+	<script type="text/javascript" src="calculator.js"></script>
+	<script type="text/javascript" src='showcase.js'></script>
+	<script type="text/javascript" src='credit_card_form.js'></script>
+	<script type="text/javascript" src='color_building_form.js'></script>
+	<script type="text/javascript" src='signup_form.js'></script>
+	<script type="text/javascript" src='validator.js'></script>
+	<script type="text/javascript" src='scheduling.js'></script>
+	<script type="text/javascript" src='shipping_and_billing_form.js'></script>
+	<script type="text/javascript" src='login.js'></script>
+
+</head>
+<body>
+	<nav>
+		<div><p>Vito Fan</p></div>
+		<div class="menu">
+				<ul>
+					<li><a href="#about" id="nav-about">About</a></li>
+					<li><a href="#projects" id="nav-projects">Projects</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+		</div>
+		<div class="nav-search">
+			<input class="search-input" type="text" name="searchInput" id="searchInput" placeholder="Search" onfocus="this.placeholder=''" onblur="this.placeholder='Search'">
+			<span class="bar"></span>
+			<p class="search-text">Search</p>
+			<a class="search-icon" href="#search-modal"><img src="./img/search-icon.png" width="18"></a>
+			<div id="search-modal" class="modal">
+				<a href="#close" class="close">X</a>
+				<p class="modal-message">Search Temporarily Disabled</p>
+			</div>
+		</div>
+	</nav>
+	<section class="content">
+	<a name="about" id="aboutAnchor"></a>
+	<section id="about">
+		<header><h2>About</h2></header>
+		<p>Hello, I'm Vito Fan, an aspiring web developer based in China, and this a little intro site I built while I was a student at the awesome Mordern Developer Institution.</p>
+	</section>
+	<a name="projects" id="projectsAnchor"></a>
+	<section id="projects">
+		<header><h2>Projects</h2>
+		<p>A showcase of the projects I have built as a student in Mordern Developer. Each project is consisted of four pages, the first page is a live demo of the project, the second page a short description, the third page illustrates what I learned from building it, the fourth page illustrates the planned revision and update for this project.</p>
+		</header>
+		<div id="projectsContainer">
+			
+			<input type="radio" class="carousel-start" name="carousel-start" id="realCalculator" checked="" hidden="">
+			<div class="calculator carousel-inner">
+				<input type="radio"  class="carousel-open" name="carousel" id="calculator-1" aria-hidden="true" hidden="" checked="checked">
+				<div class="carousel-item">
+					<form>
+					<textarea disabled 	rows="2" maxlength="10" class="view"></textarea>
+					<div class="row1">
+						<button class='ac'>AC</button>
+						<button class="percent">%</button>
+						<button class="sign" id="division">/</button>	
+						<button class='del'>DEL</button></div>
+					<div class="row2">
+						<button class="number">7</button>
+						<button class="number">8</button>
+						<button class="number">9</button>
+						<button class="sign" id="multiply">*</button>
+						</div>
+					<div calss="row3">
+						<button class="number" id="4">4</button>
+						<button class="number" id="5">5</button>
+						<button class="number" id="6">6</button>
+						<button class="sign" id="minus">-</button></div>
+					<div class="row4">
+						<button class="number" id="1">1</button>
+						<button class="number" id="2">2</button>
+						<button class="number" id="3">3</button>
+						<button class="sign" id="plus">+</button></div>
+					<div class="row5">
+						<button class="number" id="0">0</button>
+						<button class="dot" >.</button>
+						<button id="negative">&#177</button>
+						<button class="evaluate">=</button></div>
+					
+				</form>
+				<div class="item-wrapper"><h3 class="technologies">Technoogies: <span>HTML5, CSS3 and Vanilla JavaScript</span></h3></div>
+				</div>
+
+				<input type="radio"  class="carousel-open" name="carousel" id="calculator-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item">
+					<div class="item-wrapper">
+
+				<p>The calculaor is inspired by the calculator app design on LG G3. It's a rather minimalistic design.</p>
+				<p>The buttons of the calculator are registered with clicking event and respective keypress events.</p>
+				<p>The calculation is done with the `eval` function.</p>
+				<p>Placeholder for a gradient based calculator design.</p>
+					</div>
+				</div>
+				<input type="radio"  class="carousel-open" name="carousel" id="calculator-3" aria-hidden="true" hidden="">
+				<div class="carousel-item">
+				<div class="item-wrapper">
+				<h2>The Takeways</h2>
+				<ul>
+					<li>Use <code>border-radius</code> to make a circle.</li>
+					<li>The <code>eval</code> method.</li>
+					<li><code>keydown</code> and <code>click</code> event types.</li>
+					<li>Use <code>Node.innerHTML</code> to modify the content of an existing DOM element.</li>
+				</ul>
+				</div>
+				</div>
+
+				<input type="radio"  class="carousel-open" name="carousel" id="calculator-4" aria-hidden="true" hidden="">
+				<div class="carousel-item">
+				<div class="item-wrapper">
+					<ul>
+						<li>Add title bar for the calculator app, the title bar will be consisted of icons that add functionalities including close, minimize and restore.</li>
+						<li>Add a gradient-based design of the calculator.</li>
+					</ul>
+					</div>
+				</div>
+
+				<label for="calculator-4" class="carouselControl prev control-1"><</label>
+				<label for="calculator-2" class="carouselControl next control-1">></label>
+				<label for="calculator-1" class="carouselControl prev control-2"><</label>
+				<label for="calculator-3" class="carouselControl next control-2">></label>
+				<label for="calculator-2" class="carouselControl prev control-3"><</label>
+				<label for="calculator-4" class="carouselControl next control-3">></label>
+				<label for="calculator-3" class="carouselControl prev control-4"><</label>
+				<label for="calculator-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets calculator-bullet">
+					<ul>
+						<li><label for="calculator-1">&#x25cf;</label></li>
+						<li><label for="calculator-2">&#x25cf;</label></li>
+						<li><label for="calculator-3">&#x25cf;</label></li>
+						<li><label for="calculator-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+				</div>
+			<input type="radio" class="carousel-start" name="carousel-start" id="nonJsUiComponent" hidden="">
+			<div class="non-js carousel-inner">
+				<input type="radio"  class="carousel-open-non-js" name="carousel-non-js" id="non-js-1" aria-hidden="true" hidden="" checked="">
+				<div class="business-card carousel-item-non-js">
+
+				<label >
+    				<input type="checkbox"  />
+				
+    				<div class="card">
+      					<div class="front">
+				
+					<section class="heading">		
+						<p>Vito Fan</p>
+						<small>Stay Home Dad</small>
+					</section>		
+					<div class="description">
+		<p>Hi, I am a frontend Web Developer who's passionate about learning and discovering the wonderful world of programming. I'am always ready to build awesome things with you.</p>
+						<p>Vito is currently self-employed.</p>
+					</div>
+					<div class="web">
+						<a href="#">vitogalaxy@hotmail.com</a>
+						<a href="#">vitogalaxy.com</a>
+					</div>
+					<section class="footer">
+						<img src="img/enc1.png">
+						<div class="footerText">
+							<p>Vito Fan</p>
+							<p>on <a href="#">Encyclopedia.MD</a></p>
+						</div>
+						<div class="icons">
+						<img src="img/twitter.png">
+						<img src="img/facebook.png">
+						<img src="img/github1.png">
+						<img src="img/linkedin.png">
+						</div>
+					</section>
+      				</div>
+      				<div class="back">
+        				<p>
+          				Hobbies/Interests/Skills
+        				</p>
+        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      				</div>
+    				</div>
+					</label>
+				</div>
+
+				<input type="radio"  class="carousel-open-non-js" name="carousel-non-js" id="non-js-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-non-js">
+					<div class="item-wrapper">
+					<p>placeholder for another business card with different background and flipping effect.</p>
+					</div>
+				</div>
+
+				<input type="radio"  class="carousel-open-non-js" name="carousel-non-js" id="non-js-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-non-js">
+					<div class="item-wrapper">
+					<p>placeholder for another business card with different background and flipping effect.</p>
+					</div>
+				</div>
+
+
+				<input type="radio"  class="carousel-open-non-js" name="carousel-non-js" id="non-js-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-non-js">
+					<div class="item-wrapper">
+					<h2>The Takeaway</h2>
+					<ul>
+						<li>The entire business card is enclosed in a label tag, and bound to an input tag that dictates the animation/flipping effect of the card when toggled.</li>
+						<li>Use Vendor prefix to ensure compatibility across platforms</li>
+						<li><code>cusor</code></li>
+						<li>Center an element with absolute positioning and <code>transform: translate</code></li>
+						<li><code>transform-style</code></li>
+						<li>CSS specificity</li>
+						<li>CSS selector direct chidlren</li>
+						<li><code>transform:rotateX</code></li>
+					</ul>
+					</div>
+				</div>
+
+				<label for="non-js-4" class="carouselControl prev control-1"><</label>
+				<label for="non-js-2" class="carouselControl next control-1">></label>
+				<label for="non-js-1" class="carouselControl prev control-2"><</label>
+				<label for="non-js-3" class="carouselControl next control-2">></label>
+				<label for="non-js-2" class="carouselControl prev control-3"><</label>
+				<label for="non-js-4" class="carouselControl next control-3">></label>
+				<label for="non-js-3" class="carouselControl prev control-4"><</label>
+				<label for="non-js-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets non-js-bullet">
+					<ul>
+						<li><label for="non-js-1">&#x25cf;</label></li>
+						<li><label for="non-js-2">&#x25cf;</label></li>
+						<li><label for="non-js-3">&#x25cf;</label></li>
+						<li><label for="non-js-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="forms" hidden="">
+
+				<div class="forms carousel-inner">
+				<input type="radio"  class="carousel-open-forms" name="carousel-forms" id="forms-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-forms">
+					<form class="credit-card" id="creditCard">
+					<div id="top">
+					<h2>Pay Invoice</h2>
+					</div>
+					<img src="./img/logo_visa_mastercard.png">
+					<label for="name">Name on card</label>
+					<input class="credit-card-input" type="text" id="cardHolderName" name="name"></input>
+						<span id="notEnoughNumbers"></span>
+					
+						<label for="cardNumber">Card Number</label>
+						<input  class="credit-card-input" type="text" id="cardNumber" name="Credit card number"></input>
+						<label for="cvv">Security Code</label>
+							<label id="cvv_explained" for="csv">What is this?</label> 
+								<img id="cvvImg" src="http://www.quoteslike.com/images/842/security-code-on-credit-card-iUMkHw-quote.gif">
+							<input  class="credit-card-input" type="text" id="securityCode" name="security code"></input>
+						<label for="date">Expiration Date</label>
+						<input  class="credit-card-input" type="date" id="expirationDate" placeholder="MM / YY" name="expiration date"></input>
+						<span id="error"></span>
+					<button type="submit" id="submit">Pay</button>
+					</form>					
+				</div>
+				<input type="radio"  class="carousel-open-forms" name="carousel-forms" id="forms-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-forms">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>
+				</div>
+				<input type="radio"  class="carousel-open-forms" name="carousel-forms" id="forms-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-forms">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+					</div>
+
+				<input type="radio"  class="carousel-open-forms" name="carousel-forms" id="forms-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-forms">
+				<ul>
+					<div class="item-wrapper">
+					<h2>The Takeaways</h2>
+					<ul>
+						<li>General design patterns of credit card form</li>
+						<li><code>mouseenter</code> and <code>mouseleave</code> event</li>
+						<li>JavaScript Form validation methods: <code>isEmpty</code>, <code>isOfLength</code>...</li>
+					</ul>
+					</div>						
+				</ul>
+				</div>
+
+				<label for="forms-4" class="carouselControl prev control-1"><</label>
+				<label for="forms-2" class="carouselControl next control-1">></label>
+				<label for="forms-1" class="carouselControl prev control-2"><</label>
+				<label for="forms-3" class="carouselControl next control-2">></label>
+				<label for="forms-2" class="carouselControl prev control-3"><</label>
+				<label for="forms-4" class="carouselControl next control-3">></label>
+				<label for="forms-3" class="carouselControl prev control-4"><</label>
+				<label for="forms-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets forms-bullet">
+					<ul>
+						<li><label for="forms-1">&#x25cf;</label></li>
+						<li><label for="forms-2">&#x25cf;</label></li>
+						<li><label for="forms-3">&#x25cf;</label></li>
+						<li><label for="forms-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="web-components" hidden="">
+
+				<div class="web-components carousel-inner">
+				<input type="radio"  class="carousel-open-web-components" name="carousel-web-components" id="web-components-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-web-components web-components-inner">
+						<h3>A Basic Button</h3>
+						<div class="button">Buy Now</div>											
+						<h3>A Button Element with the Button Class</h3>
+						<button class="button">Send Mail</button>												
+						<h3>An Anchor with a Button Class</h3>
+						<a href="#" class="button">Search</a>											
+						<h3>Buttons of different sizes</h3>
+						<div class="button button-sm">A Small Button</div>
+						<div class="button button-md">A Medium Button</div>
+						<div class="button button-lg">A Large Button</div>
+				</div>
+				<input type="radio"  class="carousel-open-web-components" name="carousel-web-components" id="web-components-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-web-components">
+					<div class="item-wrapper">
+					<p>placeholder for altered button designs.</p>
+					</div>								
+				</div>
+				<input type="radio"  class="carousel-open-web-components" name="carousel-web-components" id="web-components-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-web-components">
+					<div class="item-wrapper">
+					<p>placeholder for buttons with Material Design rippling effect.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-web-components" name="carousel-web-components" id="web-components-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-web-components">
+					<div class="item-wrapper">
+					<h2>The Takeaways</h2>
+					<ul>
+						<li>The <code>border-shadow</code> CSS property, use shadow effect to give a hovering effect to the buttons.</li>
+						<li>Implementing Material Design</li>
+					</ul>
+					</div>				
+
+				</div>
+
+				<label for="web-components-4" class="carouselControl prev control-1"><</label>
+				<label for="web-components-2" class="carouselControl next control-1">></label>
+				<label for="web-components-1" class="carouselControl prev control-2"><</label>
+				<label for="web-components-3" class="carouselControl next control-2">></label>
+				<label for="web-components-2" class="carouselControl prev control-3"><</label>
+				<label for="web-components-4" class="carouselControl next control-3">></label>
+				<label for="web-components-3" class="carouselControl prev control-4"><</label>
+				<label for="web-components-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets web-components-bullet">
+					<ul>
+						<li><label for="web-components-1">&#x25cf;</label></li>
+						<li><label for="web-components-2">&#x25cf;</label></li>
+						<li><label for="web-components-3">&#x25cf;</label></li>
+						<li><label for="web-components-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="shopping-cart" hidden="">
+
+				<div class="shopping-cart carousel-inner">
+				<input type="radio"  class="carousel-open-shopping-cart" name="carousel-shopping-cart" id="shopping-cart-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-shopping-cart">
+					<img src="img/shopping-cart.png" width="600">
+				</div>
+				<input type="radio"  class="carousel-open-shopping-cart" name="carousel-shopping-cart" id="shopping-cart-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-shopping-cart">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-shopping-cart" name="carousel-shopping-cart" id="shopping-cart-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-shopping-cart">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-shopping-cart" name="carousel-shopping-cart" id="shopping-cart-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-shopping-cart">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="shopping-cart-4" class="carouselControl prev control-1"><</label>
+				<label for="shopping-cart-2" class="carouselControl next control-1">></label>
+				<label for="shopping-cart-1" class="carouselControl prev control-2"><</label>
+				<label for="shopping-cart-3" class="carouselControl next control-2">></label>
+				<label for="shopping-cart-2" class="carouselControl prev control-3"><</label>
+				<label for="shopping-cart-4" class="carouselControl next control-3">></label>
+				<label for="shopping-cart-3" class="carouselControl prev control-4"><</label>
+				<label for="shopping-cart-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets shopping-cart-bullet">
+					<ul>
+						<li><label for="shopping-cart-1">&#x25cf;</label></li>
+						<li><label for="shopping-cart-2">&#x25cf;</label></li>
+						<li><label for="shopping-cart-3">&#x25cf;</label></li>
+						<li><label for="shopping-cart-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="color-building-form" hidden="">
+
+				<div class="color-building carousel-inner">
+				<input type="radio"  class="carousel-open-color-building-form" name="carousel-color-building-form" id="color-building-form-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-color-building-form">
+					<form class="color-building-form">
+					<h3>Color Building Form</h3>
+						<label for="red">R </label>
+						<input type="range" min="0" max="255" step="5" id="red"></input>
+						<label for="green">G </label>
+						<input type="range" min="0" max="255" step="5" id="green"></input>
+						<label for="blue">B </label>
+						<input type="range" min="0" max="255" step="5" id="blue"></input>
+						<label for="alpha">Alpha </label>
+						<input type="range" min="0" max="1" step="0.01" id="alpha" value="1"></input>
+						<textarea id="colorBoard"></textarea>
+						<p id="colorCode"></p>
+					</form>
+				</div>
+				<input type="radio"  class="carousel-open-color-building-form" name="carousel-color-building-form" id="color-building-form-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-color-building-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-color-building-form" name="carousel-color-building-form" id="color-building-form-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-color-building-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-color-building-form" name="carousel-color-building-form" id="color-building-form-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-color-building-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="color-building-form-4" class="carouselControl prev control-1"><</label>
+				<label for="color-building-form-2" class="carouselControl next control-1">></label>
+				<label for="color-building-form-1" class="carouselControl prev control-2"><</label>
+				<label for="color-building-form-3" class="carouselControl next control-2">></label>
+				<label for="color-building-form-2" class="carouselControl prev control-3"><</label>
+				<label for="color-building-form-4" class="carouselControl next control-3">></label>
+				<label for="color-building-form-3" class="carouselControl prev control-4"><</label>
+				<label for="color-building-form-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets color-building-form-bullet">
+					<ul>
+						<li><label for="color-building-form-1">&#x25cf;</label></li>
+						<li><label for="color-building-form-2">&#x25cf;</label></li>
+						<li><label for="color-building-form-3">&#x25cf;</label></li>
+						<li><label for="color-building-form-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="sign-up-form" hidden="">
+
+				<div class="sign-up carousel-inner">
+				<input type="radio"  class="carousel-open-sign-up-form" name="carousel-sign-up-form" id="sign-up-form-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-sign-up-form">
+					<form class="signup_form">
+						<h3>Sign me Up</h3>
+						<input class="signupInput" type="text" name="First name" id="firstName" placeholder="First Name"></input>
+						<span  id="invalidFirstName" class="invalid"></span>
+						<input class="signupInput" type="text" name="Last name" id="lastName" placeholder="Last Name">
+						<span id="invalidLastName" class="invalid"></span>
+						<input class="signupInput" type="date" name="Date of Birth" id="birthDate" placeholder="Date of Birth"></input>
+						<span id="invalidDate" class="invalid"></span>
+						<input class="signupInput" type="email" name="Email" id="email" placeholder="Email">
+						<span id="invalidEmail" class="invalid"></span></input>
+						<input class="signupInput" type="password" name="Password" id="password" placeholder="Use a secure password">
+						<span id='invalidPassword' class="invalid"></span></input>
+						<span id="signup_error" class="invalid"></span>
+					
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+				<input type="radio"  class="carousel-open-sign-up-form" name="carousel-sign-up-form" id="sign-up-form-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-sign-up-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-sign-up-form" name="carousel-sign-up-form" id="sign-up-form-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-sign-up-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-sign-up-form" name="carousel-sign-up-form" id="sign-up-form-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-sign-up-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="sign-up-form-4" class="carouselControl prev control-1"><</label>
+				<label for="sign-up-form-2" class="carouselControl next control-1">></label>
+				<label for="sign-up-form-1" class="carouselControl prev control-2"><</label>
+				<label for="sign-up-form-3" class="carouselControl next control-2">></label>
+				<label for="sign-up-form-2" class="carouselControl prev control-3"><</label>
+				<label for="sign-up-form-4" class="carouselControl next control-3">></label>
+				<label for="sign-up-form-3" class="carouselControl prev control-4"><</label>
+				<label for="sign-up-form-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets sign-up-form-bullet">
+					<ul>
+						<li><label for="sign-up-form-1">&#x25cf;</label></li>
+						<li><label for="sign-up-form-2">&#x25cf;</label></li>
+						<li><label for="sign-up-form-3">&#x25cf;</label></li>
+						<li><label for="sign-up-form-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="scheduling-form" hidden="">
+
+				<div class="scheduling carousel-inner">
+				<input type="radio"  class="carousel-open-scheduling-form" name="carousel-scheduling-form" id="scheduling-form-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-scheduling-form">
+					<form class="scheduling-form">
+						<h3>Scheduling</h3>
+						<span id="scheduling-errorMessage"></span>
+						<div>
+						<label for="date">Date</label>
+						<input class="scheduleInput" type="date" id="scheduling-date" placeholder="YYYY/MM/DD"></input>
+						<span id="scheduling-dateCheck"></span>
+						</div>
+						<div><label for="hour">Hour</label>
+						<input class="scheduleInput" type="time" id="scheduling-hour"></input>
+						</div>
+						<div><label for="phone">Phone</label>
+						<input class="scheduleInput" type="text" id="scheduling-phone"></input>
+						</div>
+						<div><label for="email">Email</label>
+						<input class="scheduleInput" type="email" id="scheduling-email"></input>
+						</div>
+						<div><label for="timeZone">Choose a Timezone</label>
+						<select>
+							<option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
+							<option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
+							<option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
+							<option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>
+							<option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+							<option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>
+							<option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
+							<option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+							<option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+							<option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>
+							<option timeZoneId="11" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+							<option timeZoneId="12" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Guadalajara, Mexico City</option>
+							<option timeZoneId="13" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Saskatchewan</option>
+							<option timeZoneId="14" gmtAdjustment="GMT-05:00" useDaylightTime="0" value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+							<option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+							<option timeZoneId="16" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Indiana (East)</option>
+							<option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+							<option timeZoneId="18" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Caracas, La Paz</option>
+							<option timeZoneId="19" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Manaus</option>
+							<option timeZoneId="20" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Santiago</option>
+							<option timeZoneId="21" gmtAdjustment="GMT-03:25" useDaylightTime="1" value="-3.5">(GMT-03:30) Newfoundland</option>
+							<option timeZoneId="22" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Brasilia</option>
+							<option timeZoneId="23" gmtAdjustment="GMT-03:00" useDaylightTime="0" value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
+							<option timeZoneId="24" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Greenland</option>
+							<option timeZoneId="25" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Montevideo</option>
+							<option timeZoneId="26" gmtAdjustment="GMT-02:00" useDaylightTime="1" value="-2">(GMT-02:00) Mid-Atlantic</option>
+							<option timeZoneId="27" gmtAdjustment="GMT-01:00" useDaylightTime="0" value="-1">(GMT-01:00) Cape Verde Is.</option>
+							<option timeZoneId="28" gmtAdjustment="GMT-01:00" useDaylightTime="1" value="-1">(GMT-01:00) Azores</option>
+							<option timeZoneId="29" gmtAdjustment="GMT+00:00" useDaylightTime="0" value="0">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+							<option timeZoneId="30" gmtAdjustment="GMT+00:00" useDaylightTime="1" value="0">(GMT+00:00) Greenwich Mean Time : London</option>
+							<option timeZoneId="31" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Amsterdam, Berlin, Bern, Rome</option>
+							<option timeZoneId="32" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Belgrade, Bratislava, Budapest</option>
+							<option timeZoneId="33" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+							<option timeZoneId="34" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+							<option timeZoneId="35" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) West Central Africa</option>
+							<option timeZoneId="36" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Amman</option>
+							<option timeZoneId="37" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+							<option timeZoneId="38" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Beirut</option>
+							<option timeZoneId="39" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Cairo</option>
+							<option timeZoneId="40" gmtAdjustment="GMT+02:00" useDaylightTime="0" value="2">(GMT+02:00) Harare, Pretoria</option>
+							<option timeZoneId="41" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn</option>
+							<option timeZoneId="42" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Jerusalem</option>
+							<option timeZoneId="43" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Minsk</option>
+							<option timeZoneId="44" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Windhoek</option>
+							<option timeZoneId="45" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+							<option timeZoneId="46" gmtAdjustment="GMT+03:00" useDaylightTime="1" value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+							<option timeZoneId="47" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Nairobi</option>
+							<option timeZoneId="48" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Tbilisi</option>
+							<option timeZoneId="49" gmtAdjustment="GMT+03:30" useDaylightTime="1" value="3.5">(GMT+03:30) Tehran</option>
+							<option timeZoneId="50" gmtAdjustment="GMT+04:00" useDaylightTime="0" value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
+							<option timeZoneId="51" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Baku</option>
+							<option timeZoneId="52" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Yerevan</option>
+							<option timeZoneId="53" gmtAdjustment="GMT+04:30" useDaylightTime="0" value="4.5">(GMT+04:30) Kabul</option>
+							<option timeZoneId="54" gmtAdjustment="GMT+05:00" useDaylightTime="1" value="5">(GMT+05:00) Yekaterinburg</option>
+							<option timeZoneId="55" gmtAdjustment="GMT+05:00" useDaylightTime="0" value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+							<option timeZoneId="56" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Sri Jayawardenapura</option>
+							<option timeZoneId="57" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Chennai, Kolkata, Mumbai</option>
+							<option timeZoneId="58" gmtAdjustment="GMT+05:45" useDaylightTime="0" value="5.75">(GMT+05:45) Kathmandu</option>
+							<option timeZoneId="59" gmtAdjustment="GMT+06:00" useDaylightTime="1" value="6">(GMT+06:00) Almaty, Novosibirsk</option>
+							<option timeZoneId="60" gmtAdjustment="GMT+06:00" useDaylightTime="0" value="6">(GMT+06:00) Astana, Dhaka</option>
+							<option timeZoneId="61" gmtAdjustment="GMT+06:30" useDaylightTime="0" value="6.5">(GMT+06:30) Yangon (Rangoon)</option>
+							<option timeZoneId="62" gmtAdjustment="GMT+07:00" useDaylightTime="0" value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+							<option timeZoneId="63" gmtAdjustment="GMT+07:00" useDaylightTime="1" value="7">(GMT+07:00) Krasnoyarsk</option>
+							<option timeZoneId="64" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong</option>
+							<option timeZoneId="65" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Kuala Lumpur, Singapore</option>
+							<option timeZoneId="66" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+							<option timeZoneId="67" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Perth</option>
+							<option timeZoneId="68" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Taipei</option>
+							<option timeZoneId="69" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+							<option timeZoneId="70" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Seoul</option>
+							<option timeZoneId="71" gmtAdjustment="GMT+09:00" useDaylightTime="1" value="9">(GMT+09:00) Yakutsk</option>
+							<option timeZoneId="72" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Adelaide</option>
+							<option timeZoneId="73" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Darwin</option>
+							<option timeZoneId="74" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Brisbane</option>
+							<option timeZoneId="75" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+							<option timeZoneId="76" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Hobart</option>
+							<option timeZoneId="77" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Guam, Port Moresby</option>
+							<option timeZoneId="78" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Vladivostok</option>
+							<option timeZoneId="79" gmtAdjustment="GMT+11:00" useDaylightTime="1" value="11">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+							<option timeZoneId="80" gmtAdjustment="GMT+12:00" useDaylightTime="1" value="12">(GMT+12:00) Auckland, Wellington</option>
+							<option timeZoneId="81" gmtAdjustment="GMT+12:00" useDaylightTime="0" value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+							<option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
+						</select>
+						</div>
+						<textarea placeholder="Leave a Message Here"></textarea>
+						<button class="button" type="submit">Submit</button>
+					</form>
+				</div>
+				<input type="radio"  class="carousel-open-scheduling-form" name="carousel-scheduling-form" id="scheduling-form-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-scheduling-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-scheduling-form" name="carousel-scheduling-form" id="scheduling-form-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-scheduling-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-scheduling-form" name="carousel-scheduling-form" id="scheduling-form-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-scheduling-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="scheduling-form-4" class="carouselControl prev control-1"><</label>
+				<label for="scheduling-form-2" class="carouselControl next control-1">></label>
+				<label for="scheduling-form-1" class="carouselControl prev control-2"><</label>
+				<label for="scheduling-form-3" class="carouselControl next control-2">></label>
+				<label for="scheduling-form-2" class="carouselControl prev control-3"><</label>
+				<label for="scheduling-form-4" class="carouselControl next control-3">></label>
+				<label for="scheduling-form-3" class="carouselControl prev control-4"><</label>
+				<label for="scheduling-form-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets scheduling-form-bullet">
+					<ul>
+						<li><label for="scheduling-form-1">&#x25cf;</label></li>
+						<li><label for="scheduling-form-2">&#x25cf;</label></li>
+						<li><label for="scheduling-form-3">&#x25cf;</label></li>
+						<li><label for="scheduling-form-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="questionnaire-form" hidden="">
+
+				<div class="questionnaire carousel-inner">
+				<input type="radio"  class="carousel-open-questionnaire-form" name="carousel-questionnaire-form" id="questionnaire-form-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-questionnaire-form">
+					<form>
+						<h3>Pick one you love</h3>
+							<div><input type="radio" name="radio" id="Hearts-On-Fire"></input>
+							<label for="pandora" >Hearts On Fire</label></div>
+							<div><input type="radio" name="radio" id="Stuller"></input>
+							<label for="pandora" >Stuller</label></div>
+							<div><input type="radio" name="radio" id="Simon-Golub"></input>
+							<label for="pandora" >Simon Golub</label></div>
+							<div><input type="radio" name="radio" id="Frederick-Goldman"></input>
+							<label for="pandora" >Frederick Goldman</label></div>
+							<div class="other"><label for="other">Other: </label>
+							<input type="text" id="other"></input></div>
+					</form>
+				</div>
+				<input type="radio"  class="carousel-open-questionnaire-form" name="carousel-questionnaire-form" id="questionnaire-form-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-questionnaire-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-questionnaire-form" name="carousel-questionnaire-form" id="questionnaire-form-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-questionnaire-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-questionnaire-form" name="carousel-questionnaire-form" id="questionnaire-form-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-questionnaire-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="questionnaire-form-4" class="carouselControl prev control-1"><</label>
+				<label for="questionnaire-form-2" class="carouselControl next control-1">></label>
+				<label for="questionnaire-form-1" class="carouselControl prev control-2"><</label>
+				<label for="questionnaire-form-3" class="carouselControl next control-2">></label>
+				<label for="questionnaire-form-2" class="carouselControl prev control-3"><</label>
+				<label for="questionnaire-form-4" class="carouselControl next control-3">></label>
+				<label for="questionnaire-form-3" class="carouselControl prev control-4"><</label>
+				<label for="questionnaire-form-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets questionnaire-form-bullet">
+					<ul>
+						<li><label for="questionnaire-form-1">&#x25cf;</label></li>
+						<li><label for="questionnaire-form-2">&#x25cf;</label></li>
+						<li><label for="questionnaire-form-3">&#x25cf;</label></li>
+						<li><label for="questionnaire-form-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="shipping-form" hidden="">
+
+				<div class="shipping carousel-inner">
+				<input type="radio"  class="carousel-open-shipping-form" name="carousel-shipping-form" id="shipping-form-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-shipping-form">
+					<form id="shippingBillingForm">
+						<H1>SHIPPING INFORMATION</H1>
+						<div class="shipping-section">
+						<div class="shortInput">
+					
+							<div>
+								<label for="first_name">First Name</label>
+								<input class="shippingBillinginput" type="text" name="first name" id="first_name"></input>
+							</div>
+							<div>		
+								<label for="last_name">Last Name </label>
+								<input class="shippingBillinginput" type="text" name="last name" id="last_name"></input>
+							</div>		
+							</div>
+							<label for="addressLine1">Adress Line 1</label>
+							<input class="shippingBillinginput" type="text" name="address line 1" id="addressLine1"></input>
+							<label for="addressLine2">Adress Line 2</label>
+							<input class="shippingBillinginput" type="text" id="addressLine2" placeholder="Optional"></input>
+							
+							<label for="city">City</label>
+							<input class="shippingBillinginput" type="text" id="city" name="city name"></input>
+					
+							<div class="shortInput"><div>
+									<label for="state">State</label>
+									<input class="shippingBillinginput" type="text" id='state' name="state name">
+									</div>
+									<div>
+									<label for="zipcode">Zip Code</label>
+									<input class="shippingBillinginput" type="text" id="zipcode" name="Zip code">		
+									</div>		</div>
+							<label for="country">Country</label>
+							<input class="shippingBillinginput" type="text" id="country" name="country name"></input>
+						</div>
+						<input class="shippingBillinginput" type="checkbox" id="checkbox" name="confirm"><label>Billing address same as shipping address?</label>
+						<span id="shippingBillingError"></span>
+						<div id = "buttonLine"><button type="submit" id="back">Go Back</button>
+							<button type="submit" id="saveContinue">Save & Continue</button></div>
+					</form>
+				</div>
+				<input type="radio"  class="carousel-open-shipping-form" name="carousel-shipping-form" id="shipping-form-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-shipping-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-shipping-form" name="carousel-shipping-form" id="shipping-form-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-shipping-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-shipping-form" name="carousel-shipping-form" id="shipping-form-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-shipping-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="shipping-form-4" class="carouselControl prev control-1"><</label>
+				<label for="shipping-form-2" class="carouselControl next control-1">></label>
+				<label for="shipping-form-1" class="carouselControl prev control-2"><</label>
+				<label for="shipping-form-3" class="carouselControl next control-2">></label>
+				<label for="shipping-form-2" class="carouselControl prev control-3"><</label>
+				<label for="shipping-form-4" class="carouselControl next control-3">></label>
+				<label for="shipping-form-3" class="carouselControl prev control-4"><</label>
+				<label for="shipping-form-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets shipping-form-bullet">
+					<ul>
+						<li><label for="shipping-form-1">&#x25cf;</label></li>
+						<li><label for="shipping-form-2">&#x25cf;</label></li>
+						<li><label for="shipping-form-3">&#x25cf;</label></li>
+						<li><label for="shipping-form-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="login-form" hidden="">
+
+				<div class="login carousel-inner">
+				<input type="radio"  class="carousel-open-login-form" name="carousel-login-form" id="login-form-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-login-form">
+					<form id="logIn">
+						<input class="text_input" type="text" placeholder="Username"></input>
+						<input class="password_input" type="password" placeholder="Password"></input>
+						<div class="checkbox_input"><input type="checkbox" id="checkbox"></input>
+							<label for="checkbox">Remeber me</label></div>
+						<span class="invalid" id="loginError"></span>
+						<button type="submit" id="submit">Log In</button>
+					</form>
+				</div>
+				<input type="radio"  class="carousel-open-login-form" name="carousel-login-form" id="login-form-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-login-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-login-form" name="carousel-login-form" id="login-form-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-login-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-login-form" name="carousel-login-form" id="login-form-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-login-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="login-form-4" class="carouselControl prev control-1"><</label>
+				<label for="login-form-2" class="carouselControl next control-1">></label>
+				<label for="login-form-1" class="carouselControl prev control-2"><</label>
+				<label for="login-form-3" class="carouselControl next control-2">></label>
+				<label for="login-form-2" class="carouselControl prev control-3"><</label>
+				<label for="login-form-4" class="carouselControl next control-3">></label>
+				<label for="login-form-3" class="carouselControl prev control-4"><</label>
+				<label for="login-form-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets login-form-bullet">
+					<ul>
+						<li><label for="login-form-1">&#x25cf;</label></li>
+						<li><label for="login-form-2">&#x25cf;</label></li>
+						<li><label for="login-form-3">&#x25cf;</label></li>
+						<li><label for="login-form-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="search-form" hidden="">
+
+				<div class="search carousel-inner">
+				<input type="radio"  class="carousel-open-search-form" name="carousel-search-form" id="search-form-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-search-form">
+					<div class="item-wrapper">
+					</div>
+
+					<form>
+						<h3>Bookland</h3>
+						<input type="text"></input>
+						<select name="list-of-books" id="list-of-books">
+							<option value="Comedy">Comedy</option>
+							<option value="Drama">Drama</option>
+							<option value="Non-fiction">Non-fiction</option>
+							<option value="Realistic-fiction">Realistic-fiction</option>
+							<option value="Romantic noval">Romantic novel</option>
+							<option value="Satire">Satire</option>
+						</select>
+						<button class="search-button">Search</button>
+					</form>
+				</div>
+				<input type="radio"  class="carousel-open-search-form" name="carousel-search-form" id="search-form-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-search-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-search-form" name="carousel-search-form" id="search-form-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-search-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-search-form" name="carousel-search-form" id="search-form-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-search-form">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="search-form-4" class="carouselControl prev control-1"><</label>
+				<label for="search-form-2" class="carouselControl next control-1">></label>
+				<label for="search-form-1" class="carouselControl prev control-2"><</label>
+				<label for="search-form-3" class="carouselControl next control-2">></label>
+				<label for="search-form-2" class="carouselControl prev control-3"><</label>
+				<label for="search-form-4" class="carouselControl next control-3">></label>
+				<label for="search-form-3" class="carouselControl prev control-4"><</label>
+				<label for="search-form-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets search-form-bullet">
+					<ul>
+						<li><label for="search-form-1">&#x25cf;</label></li>
+						<li><label for="search-form-2">&#x25cf;</label></li>
+						<li><label for="search-form-3">&#x25cf;</label></li>
+						<li><label for="search-form-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="simple-gallery" hidden="">
+
+			<div class="car-gallery carousel-inner">
+				<input type="radio"  class="carousel-open-simple-gallery" name="carousel-simple-gallery" id="simple-gallery-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-simple-gallery">
+					<div class="item-wrapper">
+					</div>
+					<div class="container">
+  
+  					<input id="1" name="image" checked type="radio" />
+  					<label for="1">
+    					<img class="small" src="./img/pexels-photo.jpg"/>
+  					</label>
+					
+  					<input id="2" name="image" type="radio" />
+  					<label for="2">
+    					<img class="small" src="./img/lights-clouds-dark-car.jpg"/>
+  					</label>
+					  
+  					<input id="3" name="image" type="radio" />
+  					<label for="3">
+  					<img class="small" src="./img/pexels-photo.jpg"/></label>
+					
+  					<input id="4" name="image" type="radio" />
+  					<label for="4">
+  					<img class="small" src="./img/lights-clouds-dark-car.jpg"/>
+  					</label>
+					
+    					<input id="5" name="image" type="radio" />
+  					<label for="5">
+  					<img class="small" src="./img/pexels-photo.jpg"/>
+  					</label>
+					  
+  					<!-- Thumbnail placeholder for 5th image -->
+					
+  					<div class="placeholder">
+    					<img class="large" src="./img/pexels-photo.jpg" />
+  					</div>
+					  
+  					<div class="placeholder">
+    					<img class="large" src="./img/lights-clouds-dark-car.jpg" />
+  					</div>
+					  
+  					<div class="placeholder">
+    					<img class="large" src="./img/pexels-photo.jpg" />
+  					</div>
+					  
+  					<div class="placeholder">
+    					<img class="large" src="./img/lights-clouds-dark-car.jpg" />
+  					</div>
+    					<div class="placeholder">
+    					<img class="large" src="./img/pexels-photo.jpg" />
+  					</div>
+  
+					</div>
+				</div>
+				<input type="radio"  class="carousel-open-simple-gallery" name="carousel-simple-gallery" id="simple-gallery-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-simple-gallery">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-simple-gallery" name="carousel-simple-gallery" id="simple-gallery-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-simple-gallery">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-simple-gallery" name="carousel-simple-gallery" id="simple-gallery-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-simple-gallery">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="simple-gallery-4" class="carouselControl prev control-1"><</label>
+				<label for="simple-gallery-2" class="carouselControl next control-1">></label>
+				<label for="simple-gallery-1" class="carouselControl prev control-2"><</label>
+				<label for="simple-gallery-3" class="carouselControl next control-2">></label>
+				<label for="simple-gallery-2" class="carouselControl prev control-3"><</label>
+				<label for="simple-gallery-4" class="carouselControl next control-3">></label>
+				<label for="simple-gallery-3" class="carouselControl prev control-4"><</label>
+				<label for="simple-gallery-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets simple-gallery-bullet">
+					<ul>
+						<li><label for="simple-gallery-1">&#x25cf;</label></li>
+						<li><label for="simple-gallery-2">&#x25cf;</label></li>
+						<li><label for="simple-gallery-3">&#x25cf;</label></li>
+						<li><label for="simple-gallery-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<input type="radio" class="carousel-start" name="carousel-start" id="profile-card" hidden="">
+
+				<div class="profile carousel-inner">
+				<input type="radio"  class="carousel-open-profile-card" name="carousel-profile-card" id="profile-card-1" aria-hidden="true" hidden="" checked="">
+				<div class="carousel-item-profile-card">
+					<div class="item-wrapper">
+					</div>
+
+					<div class="sidebar-profile">
+						<h2>Vito</h2>
+						<h2>Fan</h2>
+						<img src="img/profile_photo.jpg">
+						<h3>About the Developer</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+				</div>
+				<input type="radio"  class="carousel-open-profile-card" name="carousel-profile-card" id="profile-card-2" aria-hidden="true" hidden="" >
+				<div class="carousel-item-profile-card">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-profile-card" name="carousel-profile-card" id="profile-card-3" aria-hidden="true" hidden="">
+				<div class="carousel-item-profile-card">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+				<input type="radio"  class="carousel-open-profile-card" name="carousel-profile-card" id="profile-card-4" aria-hidden="true" hidden="">
+				<div class="carousel-item-profile-card">
+					<div class="item-wrapper">
+					<p>placeholder for altered design.</p>
+					</div>				
+
+				</div>
+
+				<label for="profile-card-4" class="carouselControl prev control-1"><</label>
+				<label for="profile-card-2" class="carouselControl next control-1">></label>
+				<label for="profile-card-1" class="carouselControl prev control-2"><</label>
+				<label for="profile-card-3" class="carouselControl next control-2">></label>
+				<label for="profile-card-2" class="carouselControl prev control-3"><</label>
+				<label for="profile-card-4" class="carouselControl next control-3">></label>
+				<label for="profile-card-3" class="carouselControl prev control-4"><</label>
+				<label for="profile-card-1" class="carouselControl next control-4">></label>
+
+				<div class="bullets profile-card-bullet">
+					<ul>
+						<li><label for="profile-card-1">&#x25cf;</label></li>
+						<li><label for="profile-card-2">&#x25cf;</label></li>
+						<li><label for="profile-card-3">&#x25cf;</label></li>
+						<li><label for="profile-card-4">&#x25cf;</label></li>			
+					</ul>
+				</div>
+			</div>
+
+			<article class="tabComponent">
+				<label for="realCalculator">Real Calculator</label>		
+				<label for="nonJsUiComponent">Non-JS UI Component</label>		
+				<label for="forms">Credit Card Form</label>		
+				<label for="web-components">Web Components</label>		
+				<label for="shopping-cart">Shopping Cart</label>
+				<label for="color-building-form">Color Building Form</label>
+				<label for="sign-up-form">Sign Up Form</label>
+				<label for="scheduling-form">Scheduling Form</label>
+				<label for="questionnaire-form">Questionnaire</label>
+				<label for="shipping-form">Shipping Form</label>
+				<label for="login-form">Log In Form</label>
+				<label for="search-form">Search Form</label>
+				<label for="simple-gallery">Simple Gallery</label>
+				<label for="profile-card">Sidebar Profile</label>
+			</article>
+		</div>
+		</section>
+		<section id="skills">
+			<header>
+				<h2>Skills</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco</p>
+			</header>
+			<svg class="skill-svg">
+				<rect x="10%" y="50" width="56%" height="30" rx="1" ry="1" fill="red"/>
+				<text x="11%" y="72" fill="white">70%</text>
+				<rect x="66%" y="50" width="24%" height="30" rx="1" ry="1" fill="rgb(68, 126, 235)"/>
+				<text x="86%" y="72" fill="white">30%</text>
+
+				<text x="15%" y="120" fill="rgb(255, 39, 70)">Frontend Development</text>
+				<text x="45%" y="120" fill="rgb(83, 95, 241)">Backend Development</text>
+				<text x="75%" y="120" fill="rgb(44, 44, 44)">Other Skills</text>							
+				<text x="3%" y="200" fill="rgb(88, 88, 88)">Expert</text>
+				<text x="3%" y="260" fill="rgb(88, 88, 88)">Proficient</text>
+				<text x="3%" y="320" fill="rgb(88, 88, 88)">Competent</text>
+				<text x="3%" y="380" fill="rgb(88, 88, 88)">Learning</text>
+
+				<rect class="skill-rect" x="12%" y="185" width="3%" height="220" fill="rgb(255, 169, 38)" />
+				<rect class="skill-rect" x="16.5%" y="245" width="3%" height="160" fill="rgb(0, 188, 244)" />
+				<rect class="skill-rect" x="21%" y="185" width="3%" height="220" fill="rgb(28, 223, 38)" />
+				<rect class="skill-rect" x="25.5%" y="245" width="3%" height="160" fill="rgb(255, 121, 173)" />
+				<rect class="skill-rect" x="30%" y="310" width="3%" height="95" fill="rgb(238, 234, 0)" />
+				<line x1="2%" y1="405" x2="35%" y2="405" stroke="rgb(187, 187, 187)" stroke-width="1"/>
+
+				<rect class="skill-rect" x="42%" y="185" width="3%" height="220" fill="rgb(255, 169, 38)" />
+				<rect class="skill-rect" x="46.5%" y="245" width="3%" height="160" fill="rgb(0, 188, 244)" />
+				<rect class="skill-rect" x="51%" y="185" width="3%" height="220" fill="rgb(28, 223, 38)" />
+				<rect class="skill-rect" x="55.5%" y="245" width="3%" height="160" fill="rgb(255, 121, 173)" />
+				<rect class="skill-rect" x="60%" y="310" width="3%" height="95" fill="rgb(238, 234, 0)" />
+				<line x1="40%" y1="405" x2="65%" y2="405" stroke="rgb(187, 187, 187)" stroke-width="1"/>
+
+				<rect class="skill-rect" x="72%" y="185" width="3%" height="220" fill="rgb(142, 245, 82)" />
+				<rect class="skill-rect" x="76.5%" y="245" width="3%" height="160" fill="rgb(0, 209, 150)" />
+				<rect class="skill-rect" x="81%" y="185" width="3%" height="220" fill="rgb(12, 195, 245)" />
+				<rect class="skill-rect" x="85.5%" y="245" width="3%" height="160" fill="rgb(147, 147, 255)" />
+				<rect class="skill-rect" x="90%" y="310" width="3%" height="95" fill="rgb(219, 134, 254)" />
+				<line x1="70%" y1="405" x2="95%" y2="405" stroke="rgb(187, 187, 187)" stroke-width="1"/>
+
+			</svg>
+			<div class="rotate-text">
+				<ul class="rotate-text-list frontend">
+					<li>JavaScript</li>
+					<li>HTML/CSS</li>
+					<li>ReactJS</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+				</ul>
+
+				<ul class="rotate-text-list backend">
+					<li>JavaScript</li>
+					<li>HTML/CSS</li>
+					<li>ReactJS</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+				</ul>
+
+				<ul class="rotate-text-list others">
+					<li>Written Communication</li>
+					<li>Problem Solving</li>
+					<li>Project Management</li>
+					<li>Research</li>
+					<li>Public Speaking</li>
+				</ul>
+			</div>
+			<div class="tooltip">
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+
+			<div class="expertise">
+				<p>Proficient</p>
+			</div>
+
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+
+			<div class="expertise">
+				<p>Proficient</p>
+			</div>
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+
+			<div class="expertise">
+				<p>Proficient</p>
+			</div>
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+
+			<div class="expertise">
+				<p>Proficient</p>
+			</div>
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+
+			<div class="expertise">
+				<p>Proficient</p>
+			</div>
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+
+			<div class="expertise">
+				<p>Proficient</p>
+			</div>
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+
+			<div class="expertise">
+				<p>Proficient</p>
+			</div>
+			<div class="expertise">
+				<p>Expert</p>
+			</div>
+			</div>
+		</section>
+		<section id="contact">
+			<header>
+				<h2>Contact</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</header>
+			
+			<article class="contact-item">
+				<label  class="business-card">
+    				<input type="checkbox"  />
+				
+    				<div class="card">
+      					<div class="front">
+				
+					<section class="heading">		
+						<p>Vito Fan</p>
+						<small>Stay Home Dad</small>
+					</section>		
+					<div class="description">
+		<p>Vito is an Internationally recognized stay home dad who's passionate about learning and discover 				programming, who has built websites and apps that's been used by many people.</p>
+						<p>Vito is currently self-employed.</p>
+					</div>
+					<div class="web">
+						<a href="#">vitogalaxy@hotmail.com</a>
+						<a href="#">vitogalaxy.com</a>
+					</div>
+					<section class="footer">
+						<img src="img/enc1.png">
+						<div class="footerText">
+							<p>Vito Fan</p>
+							<p>on <a href="#">Encyclopedia.MD</a></p>
+						</div>
+						<div class="icons">
+						<img src="img/twitter.png">
+						<img src="img/facebook.png">
+						<img src="img/github1.png">
+						<img src="img/linkedin.png">
+						</div>
+					</section>
+      				</div>
+      				<div class="back">
+        				<p>
+          				Hobbies/Interests/Skills
+        				</p>
+        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      				</div>
+    				</div>
+					</label>
+			</article>
+		</section>
+		<section id="footer">
+			<p>&#169; 2016 Fan Yongzhi</p>
+		</section>
+	</section>
+</body>
+</html>
