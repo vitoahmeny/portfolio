@@ -16,25 +16,26 @@
 </head>
 <body>
 	<nav>
+		<div class="navContainer">
 		<div><p>Vito Fan</p></div>
-		<div class="menu">
-				<ul>
-					<li><a href="#about" id="nav-about">About</a></li>
-					<li><a href="#projects" id="nav-projects">Projects</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-		</div>
-		<div class="nav-search">
-			<input class="search-input" type="text" name="searchInput" id="searchInput" placeholder="Search" onfocus="this.placeholder=''" onblur="this.placeholder='Search'">
-			<span class="bar"></span>
-			<p class="search-text">Search</p>
-			<a class="search-icon" href="#search-modal"><img src="./img/search-icon.png" width="18"></a>
-			<div id="search-modal" class="modal">
-				<a href="#close" class="close">X</a>
-				<p class="modal-message">Search Temporarily Disabled</p>
-			</div>
-		</div>
+				<div class="menu">
+						<ul class="menuContainer">
+							<li><a href="#about" id="nav-about">About</a></li>
+							<li><a href="#projects" id="nav-projects">Projects</a></li>
+							<li><a href="#">Skills</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+				</div>
+				<div class="nav-search">
+					<input class="search-input" type="text" name="searchInput" id="searchInput" placeholder="Search" onfocus="this.placeholder=''" onblur="this.placeholder='Search'">
+					<span class="bar"></span>
+					<p class="search-text">Search</p>
+					<a class="search-icon" href="#"><img src="./img/search-icon.png" width="18"></a>
+					<div id="search-modal" class="modal">
+						<a href="#close" class="close">X</a>
+						<p class="modal-message">Search Temporarily Disabled</p>
+					</div>
+				</div></div>
 	</nav>
 	<section class="content">
 	<a name="about" id="aboutAnchor"></a>
@@ -48,8 +49,8 @@
 		<p>A showcase of the projects I have built as a student in Mordern Developer. Each project is consisted of four pages, the first page is a live demo of the project, the second page a short description, the third page illustrates what I learned from building it, the fourth page illustrates the planned revision and update for this project.</p>
 		</header>
 		<div id="projectsContainer">
-			
 			<input type="radio" class="carousel-start" name="carousel-start" id="realCalculator" checked="" hidden="">
+			<label for="realCalculator" class="mobileLabel">Real Calculator</label>
 			<div class="calculator carousel-inner">
 				<input type="radio"  class="carousel-open" name="carousel" id="calculator-1" aria-hidden="true" hidden="" checked="checked">
 				<div class="carousel-item">
@@ -87,6 +88,7 @@
 				</div>
 
 				<input type="radio"  class="carousel-open" name="carousel" id="calculator-2" aria-hidden="true" hidden="" >
+
 				<div class="carousel-item">
 					<div class="item-wrapper">
 
@@ -96,7 +98,9 @@
 				<p>Placeholder for a gradient based calculator design.</p>
 					</div>
 				</div>
+
 				<input type="radio"  class="carousel-open" name="carousel" id="calculator-3" aria-hidden="true" hidden="">
+
 				<div class="carousel-item">
 				<div class="item-wrapper">
 				<h2>The Takeways</h2>
@@ -110,6 +114,7 @@
 				</div>
 
 				<input type="radio"  class="carousel-open" name="carousel" id="calculator-4" aria-hidden="true" hidden="">
+
 				<div class="carousel-item">
 				<div class="item-wrapper">
 					<ul>
@@ -136,8 +141,11 @@
 						<li><label for="calculator-4">&#x25cf;</label></li>			
 					</ul>
 				</div>
-				</div>
+			</div>
+
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="nonJsUiComponent" hidden="">
+			<label for="nonJsUiComponent" class="mobileLabel">Business Card</label>
 			<div class="non-js carousel-inner">
 				<input type="radio"  class="carousel-open-non-js" name="carousel-non-js" id="non-js-1" aria-hidden="true" hidden="" checked="">
 				<div class="business-card carousel-item-non-js">
@@ -240,7 +248,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="forms" hidden="">
+			<label for="forms" class="mobileLabel">Credit Card Form</label>
 
 				<div class="forms carousel-inner">
 				<input type="radio"  class="carousel-open-forms" name="carousel-forms" id="forms-1" aria-hidden="true" hidden="" checked="">
@@ -258,7 +268,7 @@
 						<input  class="credit-card-input" type="text" id="cardNumber" name="Credit card number"></input>
 						<label for="cvv">Security Code</label>
 							<label id="cvv_explained" for="csv">What is this?</label> 
-								<img id="cvvImg" src="http://www.quoteslike.com/images/842/security-code-on-credit-card-iUMkHw-quote.gif">
+								<img id="cvvImg" src="./img/security_code.png">
 							<input  class="credit-card-input" type="text" id="securityCode" name="security code"></input>
 						<label for="date">Expiration Date</label>
 						<input  class="credit-card-input" type="date" id="expirationDate" placeholder="MM / YY" name="expiration date"></input>
@@ -312,7 +322,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="web-components" hidden="">
+			<label for="web-components" class="mobileLabel">Web Components</label>
 
 				<div class="web-components carousel-inner">
 				<input type="radio"  class="carousel-open-web-components" name="carousel-web-components" id="web-components-1" aria-hidden="true" hidden="" checked="">
@@ -372,7 +384,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="shopping-cart" hidden="">
+			<label for="shopping-cart" class="mobileLabel">Shopping Cart</label>
 
 				<div class="shopping-cart carousel-inner">
 				<input type="radio"  class="carousel-open-shopping-cart" name="carousel-shopping-cart" id="shopping-cart-1" aria-hidden="true" hidden="" checked="">
@@ -420,7 +434,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="color-building-form" hidden="">
+			<label for="color-building-form" class="mobileLabel">Color Building Form</label>
 
 				<div class="color-building carousel-inner">
 				<input type="radio"  class="carousel-open-color-building-form" name="carousel-color-building-form" id="color-building-form-1" aria-hidden="true" hidden="" checked="">
@@ -480,7 +496,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="sign-up-form" hidden="">
+			<label for="sign-up-form" class="mobileLabel">Sign Up Form</label>
 
 				<div class="sign-up carousel-inner">
 				<input type="radio"  class="carousel-open-sign-up-form" name="carousel-sign-up-form" id="sign-up-form-1" aria-hidden="true" hidden="" checked="">
@@ -543,7 +561,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="scheduling-form" hidden="">
+			<label for="scheduling-form" class="mobileLabel">Scheduling Form</label>
 
 				<div class="scheduling carousel-inner">
 				<input type="radio"  class="carousel-open-scheduling-form" name="carousel-scheduling-form" id="scheduling-form-1" aria-hidden="true" hidden="" checked="">
@@ -696,7 +716,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="questionnaire-form" hidden="">
+			<label for="questionnaire-form" class="mobileLabel">Questionnaire</label>
 
 				<div class="questionnaire carousel-inner">
 				<input type="radio"  class="carousel-open-questionnaire-form" name="carousel-questionnaire-form" id="questionnaire-form-1" aria-hidden="true" hidden="" checked="">
@@ -756,7 +778,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="shipping-form" hidden="">
+			<label for="shipping-form" class="mobileLabel">Shipping Form</label>
 
 				<div class="shipping carousel-inner">
 				<input type="radio"  class="carousel-open-shipping-form" name="carousel-shipping-form" id="shipping-form-1" aria-hidden="true" hidden="" checked="">
@@ -841,7 +865,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="login-form" hidden="">
+			<label for="login-form" class="mobileLabel">Log In Form</label>
 
 				<div class="login carousel-inner">
 				<input type="radio"  class="carousel-open-login-form" name="carousel-login-form" id="login-form-1" aria-hidden="true" hidden="" checked="">
@@ -896,7 +922,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="search-form" hidden="">
+			<label for="search-form" class="mobileLabel">Search Form</label>
 
 				<div class="search carousel-inner">
 				<input type="radio"  class="carousel-open-search-form" name="carousel-search-form" id="search-form-1" aria-hidden="true" hidden="" checked="">
@@ -959,7 +987,9 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="simple-gallery" hidden="">
+			<label for="simple-gallery" class="mobileLabel">Simple Gallery</label>
 
 			<div class="car-gallery carousel-inner">
 				<input type="radio"  class="carousel-open-simple-gallery" name="carousel-simple-gallery" id="simple-gallery-1" aria-hidden="true" hidden="" checked="">
@@ -1056,13 +1086,13 @@
 				</div>
 			</div>
 
+			
 			<input type="radio" class="carousel-start" name="carousel-start" id="profile-card" hidden="">
+			<label for="profile-card" class="mobileLabel">Sidebar Profile</label>
 
 				<div class="profile carousel-inner">
 				<input type="radio"  class="carousel-open-profile-card" name="carousel-profile-card" id="profile-card-1" aria-hidden="true" hidden="" checked="">
 				<div class="carousel-item-profile-card">
-					<div class="item-wrapper">
-					</div>
 
 					<div class="sidebar-profile">
 						<h2>Vito</h2>
@@ -1270,7 +1300,7 @@
 			</header>
 			
 			<article class="contact-item">
-				<label  class="business-card">
+				<label class="business-card">
     				<input type="checkbox"  />
 				
     				<div class="card">
