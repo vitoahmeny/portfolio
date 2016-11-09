@@ -12,7 +12,7 @@
 	<script type="text/javascript" src='scheduling.js'></script>
 	<script type="text/javascript" src='shipping_and_billing_form.js'></script>
 	<script type="text/javascript" src='login.js'></script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<nav>
@@ -22,8 +22,8 @@
 						<ul class="menuContainer">
 							<li><a href="#about" id="nav-about">About</a></li>
 							<li><a href="#projects" id="nav-projects">Projects</a></li>
-							<li><a href="#">Skills</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 				</div>
 				<div class="nav-search">
@@ -35,17 +35,74 @@
 						<a href="#close" class="close">X</a>
 						<p class="modal-message">Search Temporarily Disabled</p>
 					</div>
-				</div></div>
+				</div>
+		</div>
 	</nav>
-	<section class="content">
-	<a name="about" id="aboutAnchor"></a>
+
+  <input type="checkbox" id="show-menu">
+  
+  <div id="fix-bar">
+    <div class="logo">
+      <a href="#">Vito Fan</a>
+    </div>
+    
+    <div class="push">
+      <label class="hamburguer" for="show-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  </div>
+
+  <div id="canvas">
+    
+    <div id="nav">
+      <ul class="site-menu">    
+        <li><a href="#about">About</a></li>
+        <li>
+        <input type="checkbox" name="projectsMenu" id="projectsMenu" hidden="">
+        <label for="projectsMenu" class="mobileMenuItem">Projects</label>
+        <div class="projectsMenuContent">
+        	<ul>
+				<li><label for="realCalculator" class="projectsMenuLabel">Real Calculator</label></li>
+				<li><label for="nonJsUiComponent" class="projectsMenuLabel">Business Card</label></li>
+				<li><label for="forms" class="projectsMenuLabel">Credit Card Form</label></li>
+				<li><label for="web-components" class="projectsMenuLabel">Web Components</label></li>
+				<li><label for="shopping-cart" class="projectsMenuLabel">Shopping Cart</label></li>
+				<li><label for="color-building-form" class="projectsMenuLabel">Color Building Form</label></li>
+				<li><label for="sign-up-form" class="projectsMenuLabel">Sign Up Form</label></li>
+				<li><label for="scheduling-form" class="projectsMenuLabel">Scheduling Form</label></li>
+				<li><label for="questionnaire-form" class="projectsMenuLabel">Questionnaire</label></li>
+				<li><label for="shipping-form" class="projectsMenuLabel">Shipping Form</label></li>
+				<li><label for="login-form" class="projectsMenuLabel">Log In Form</label></li>
+				<li><label for="search-form" class="projectsMenuLabel">Search Form</label></li>
+				<li><label for="simple-gallery" class="projectsMenuLabel">Simple Gallery</label></li>
+				<li><label for="profile-card" class="projectsMenuLabel">Sidebar Profile</label></li>
+
+        	</ul>
+        </div>
+        </li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="copy">© 2016 Logo. All Rights Reserved.</li>
+      </ul>
+
+
+    <label for="show-menu" class="mask"></label>
+	</div>
+	<section class="content" id="content">
+
+	<a name="about"></a>
 	<section id="about">
-		<header><h2>About</h2></header>
+		</a><header><h2>About</h2></header>
 		<p>Hello, I'm Vito Fan, an aspiring web developer based in China, and this a little intro site I built while I was a student at the awesome Mordern Developer Institution.</p>
 	</section>
-	<a name="projects" id="projectsAnchor"></a>
+	<a name="projects" class="anchorTag" id="projectsAnchor"></a>
 	<section id="projects">
 		<header><h2>Projects</h2>
+
 		<p>A showcase of the projects I have built as a student in Mordern Developer. Each project is consisted of four pages, the first page is a live demo of the project, the second page a short description, the third page illustrates what I learned from building it, the fourth page illustrates the planned revision and update for this project.</p>
 		</header>
 		<div id="projectsContainer">
@@ -84,7 +141,7 @@
 						<button class="evaluate">=</button></div>
 					
 				</form>
-				<div class="item-wrapper"><h3 class="technologies">Technoogies: <span>HTML5, CSS3 and Vanilla JavaScript</span></h3></div>
+				<h3 class="technologies">Technoogies: <span>HTML5, CSS3 and Vanilla JavaScript</span></h3>
 				</div>
 
 				<input type="radio"  class="carousel-open" name="carousel" id="calculator-2" aria-hidden="true" hidden="" >
@@ -1166,131 +1223,111 @@
 			</article>
 		</div>
 		</section>
-		<section id="skills">
+		<section id="skills" name=skills>
 			<header>
 				<h2>Skills</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco</p>
 			</header>
+			<div class="svgContainer">
 			<svg class="skill-svg">
-				<rect x="10%" y="50" width="56%" height="30" rx="1" ry="1" fill="red"/>
+				<rect x="10%" y="50" width="56%" height="30" fill="red"/>
 				<text x="11%" y="72" fill="white">70%</text>
-				<rect x="66%" y="50" width="24%" height="30" rx="1" ry="1" fill="rgb(68, 126, 235)"/>
-				<text x="86%" y="72" fill="white">30%</text>
+				<rect x="66%" y="50" width="24%" height="30" fill="rgb(68, 126, 235)"/>
+				<text x="80%" y="72" fill="white">30%</text>
+				</svg>
+			<div class="frontendContainer">
+				<div class="frontendExpertise">Expert</div>
+				<div class="frontendExpertise">Proficient</div>
+				<div class="frontendExpertise">Expert</div>
+				<div class="frontendExpertise">Proficient</div>
+				<div class="frontendExpertise">Learning</div>
 
-				<text x="15%" y="120" fill="rgb(255, 39, 70)">Frontend Development</text>
-				<text x="45%" y="120" fill="rgb(83, 95, 241)">Backend Development</text>
-				<text x="75%" y="120" fill="rgb(44, 44, 44)">Other Skills</text>							
-				<text x="3%" y="200" fill="rgb(88, 88, 88)">Expert</text>
-				<text x="3%" y="260" fill="rgb(88, 88, 88)">Proficient</text>
-				<text x="3%" y="320" fill="rgb(88, 88, 88)">Competent</text>
-				<text x="3%" y="380" fill="rgb(88, 88, 88)">Learning</text>
-
-				<rect class="skill-rect" x="12%" y="185" width="3%" height="220" fill="rgb(255, 169, 38)" />
-				<rect class="skill-rect" x="16.5%" y="245" width="3%" height="160" fill="rgb(0, 188, 244)" />
-				<rect class="skill-rect" x="21%" y="185" width="3%" height="220" fill="rgb(28, 223, 38)" />
-				<rect class="skill-rect" x="25.5%" y="245" width="3%" height="160" fill="rgb(255, 121, 173)" />
-				<rect class="skill-rect" x="30%" y="310" width="3%" height="95" fill="rgb(238, 234, 0)" />
-				<line x1="2%" y1="405" x2="35%" y2="405" stroke="rgb(187, 187, 187)" stroke-width="1"/>
-
-				<rect class="skill-rect" x="42%" y="185" width="3%" height="220" fill="rgb(255, 169, 38)" />
-				<rect class="skill-rect" x="46.5%" y="245" width="3%" height="160" fill="rgb(0, 188, 244)" />
-				<rect class="skill-rect" x="51%" y="185" width="3%" height="220" fill="rgb(28, 223, 38)" />
-				<rect class="skill-rect" x="55.5%" y="245" width="3%" height="160" fill="rgb(255, 121, 173)" />
-				<rect class="skill-rect" x="60%" y="310" width="3%" height="95" fill="rgb(238, 234, 0)" />
-				<line x1="40%" y1="405" x2="65%" y2="405" stroke="rgb(187, 187, 187)" stroke-width="1"/>
-
-				<rect class="skill-rect" x="72%" y="185" width="3%" height="220" fill="rgb(142, 245, 82)" />
-				<rect class="skill-rect" x="76.5%" y="245" width="3%" height="160" fill="rgb(0, 209, 150)" />
-				<rect class="skill-rect" x="81%" y="185" width="3%" height="220" fill="rgb(12, 195, 245)" />
-				<rect class="skill-rect" x="85.5%" y="245" width="3%" height="160" fill="rgb(147, 147, 255)" />
-				<rect class="skill-rect" x="90%" y="310" width="3%" height="95" fill="rgb(219, 134, 254)" />
-				<line x1="70%" y1="405" x2="95%" y2="405" stroke="rgb(187, 187, 187)" stroke-width="1"/>
-
-			</svg>
-			<div class="rotate-text">
-				<ul class="rotate-text-list frontend">
+				<svg class="frontend-svg">
+				<text text-anchor="middle" x="50%" y="100" fill="rgb(255, 39, 70)">Frontend Development</text>
+				<text x="15%" y="180" fill="rgb(88, 88, 88)">Expert</text>
+				<text x="15%" y="240" fill="rgb(88, 88, 88)">Proficient</text>
+				<text x="15%" y="300" fill="rgb(88, 88, 88)">Competent</text>
+				<text x="15%" y="360" fill="rgb(88, 88, 88)">Learning</text>
+				<rect class="frontendRects" x="40%" y="165" width="8%" height="220" fill="rgb(255, 169, 38)" />
+				<rect class="frontendRects" x="50%" y="225" width="8%" height="160" fill="rgb(0, 188, 244)" />
+				<rect class="frontendRects" x="60%" y="165" width="8%" height="220" fill="rgb(28, 223, 38)" />
+				<rect class="frontendRects" x="70%" y="225" width="8%" height="160" fill="rgb(255, 121, 173)" />
+				<rect class="frontendRects" x="80%" y="290" width="8%" height="95" fill="rgb(238, 234, 0)" />
+				<line x1="15%" y1="385" x2="94%" y2="385" stroke="rgb(187, 187, 187)" stroke-width="1"/>
+				</svg>
+				<ul class="rotate-text-list-frontend rotate-text-list">
 					<li>JavaScript</li>
 					<li>HTML/CSS</li>
 					<li>ReactJS</li>
 					<li>JavaScript</li>
 					<li>jQuery</li>
 				</ul>
+				</div>
 
-				<ul class="rotate-text-list backend">
+				<div class="backendContainer">
+				<div class="frontendExpertise">Expert</div>
+				<div class="frontendExpertise">Proficient</div>
+				<div class="frontendExpertise">Expert</div>
+				<div class="frontendExpertise">Proficient</div>
+				<div class="frontendExpertise">Learning</div>
+				<svg class="backend-svg">
+				<text text-anchor="middle" x="50%" y="100" fill="rgb(83, 95, 241)">Backend Development</text>
+				<text x="15%" y="180" fill="rgb(88, 88, 88)" class="expertiseText">Expert</text>
+				<text x="15%" y="240" fill="rgb(88, 88, 88)">Proficient</text>
+				<text x="15%" y="300" fill="rgb(88, 88, 88)">Competent</text>
+				<text x="15%" y="360" fill="rgb(88, 88, 88)">Learning</text>
+				<rect class="frontendRects" x="40%" y="165" width="8%" height="220" fill="rgb(255, 169, 38)" />
+				<rect class="frontendRects" x="50%" y="225" width="8%" height="160" fill="rgb(0, 188, 244)" />
+				<rect class="frontendRects" x="60%" y="165" width="8%" height="220" fill="rgb(28, 223, 38)" />
+				<rect class="frontendRects" x="70%" y="225" width="8%" height="160" fill="rgb(255, 121, 173)" />
+				<rect class="frontendRects" x="80%" y="290" width="8%" height="95" fill="rgb(238, 234, 0)" />
+				<line x1="15%" y1="385" x2="94%" y2="385" stroke="rgb(187, 187, 187)" stroke-width="1"/>
+				
+				</svg>
+				<ul class="rotate-text-list">
 					<li>JavaScript</li>
 					<li>HTML/CSS</li>
 					<li>ReactJS</li>
 					<li>JavaScript</li>
 					<li>jQuery</li>
 				</ul>
+				</div>
 
-				<ul class="rotate-text-list others">
+				<div class="othersContainer">
+				<div class="frontendExpertise">Expert</div>
+				<div class="frontendExpertise">Proficient</div>
+				<div class="frontendExpertise">Expert</div>
+				<div class="frontendExpertise">Proficient</div>
+				<div class="frontendExpertise">Learning</div>
+				<svg class="others-svg">
+				<text text-anchor="middle" x="50%" y="100" fill="rgb(44, 44, 44)">Other Skills</text>
+				<text x="15%" y="180" fill="rgb(88, 88, 88)">Expert</text>
+				<text x="15%" y="240" fill="rgb(88, 88, 88)">Proficient</text>
+				<text x="15%" y="300" fill="rgb(88, 88, 88)">Competent</text>	
+				<text x="15%" y="360" fill="rgb(88, 88, 88)">Learning</text>
+						
+				<rect class="frontendRects" x="40%" y="165" width="8%" height="220" fill="rgb(142, 245, 82)" />
+				<rect class="frontendRects" x="50%" y="225" width="8%" height="160" fill="rgb(0, 209, 150)" />
+				<rect class="frontendRects" x="60%" y="165" width="8%" height="220" fill="rgb(12, 195, 245)" />
+				<rect class="frontendRects" x="70%" y="225" width="8%" height="160" fill="rgb(147, 147, 255)" />
+				<rect class="frontendRects" x="80%" y="290" width="8%" height="95" fill="rgb(219, 134, 254)" />
+				<line x1="15%" y1="385" x2="94%" y2="385" stroke="rgb(187, 187, 187)" stroke-width="1"/>
+				
+				</svg>
+
+				<ul class="rotate-text-list">
 					<li>Written Communication</li>
 					<li>Problem Solving</li>
 					<li>Project Management</li>
 					<li>Research</li>
 					<li>Public Speaking</li>
 				</ul>
-			</div>
-			<div class="tooltip">
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
-
-			<div class="expertise">
-				<p>Proficient</p>
-			</div>
-
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
-
-			<div class="expertise">
-				<p>Proficient</p>
-			</div>
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
-
-			<div class="expertise">
-				<p>Proficient</p>
-			</div>
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
-
-			<div class="expertise">
-				<p>Proficient</p>
-			</div>
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
-
-			<div class="expertise">
-				<p>Proficient</p>
-			</div>
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
-
-			<div class="expertise">
-				<p>Proficient</p>
-			</div>
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
-
-			<div class="expertise">
-				<p>Proficient</p>
-			</div>
-			<div class="expertise">
-				<p>Expert</p>
-			</div>
+				</div>
 			</div>
 		</section>
-		<section id="contact">
+		<section id="contact" name="contact">
 			<header>
 				<h2>Contact</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -1347,9 +1384,11 @@
 					</label>
 			</article>
 		</section>
+
 		<section id="footer">
 			<p>&#169; 2016 Fan Yongzhi</p>
 		</section>
 	</section>
+	</div>
 </body>
 </html>
