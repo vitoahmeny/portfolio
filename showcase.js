@@ -51,12 +51,20 @@ document.addEventListener('DOMContentLoaded', function () {
 		element.scrollIntoView();
 	}
 
+	function mobileLabelHandler() {
+		this.scrollIntoView(false);
+	}
+
 	for (var i = 0; i < frontendRects.length; i++) {
 		frontendRects[i].addEventListener('mouseenter', rectHandlerEnter);
 		frontendRects[i].addEventListener('mouseleave', rectHandlerLeave);
 	}
 	for (var i = 0; i < projectsMenuLabel.length; i++) {
 		projectsMenuLabel[i].addEventListener('click', projectsMenuLabelHandler)
+	}
+
+	for (var i = 0; i < mobileLabel.length; i++) {
+		mobileLabel[i].addEventListener('click', mobileLabelHandler);
 	}
 
 });

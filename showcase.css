@@ -1754,8 +1754,9 @@ and (max-width: 414px) {
     font-weight: 700;
 }
 
-#nav a:hover {
+#nav a:hover, .mobileMenuItem:hover {
     background-color: #eee;
+    cursor: pointer;
 }
 
 
