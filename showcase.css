@@ -1587,6 +1587,10 @@ font-size: 1em;
 	color: rgb(131, 131, 131);
 }
 
+.mobileSlide {
+	display: none;
+}
+
 @media screen 
 and (max-width: 414px) {
 
@@ -1600,6 +1604,10 @@ and (max-width: 414px) {
     box-sizing: border-box;
 }
 
+.mobileSlide {
+	display: block;
+}
+
 #fix-bar {
     position: fixed;
     top: 0;
@@ -1607,7 +1615,7 @@ and (max-width: 414px) {
     z-index: 9;
     width: 100%;
     height: 60px;
-    background-color: #00a8eb;
+    background-color: rgb(47, 220, 229);
 }
 
 #fix-bar .logo {
@@ -1635,7 +1643,7 @@ and (max-width: 414px) {
     position: relative;
     left: 0;
     height: 100%;
-    background-color: #00a8eb;
+    background-color: rgb(47, 220, 229);
     transition: transform 0.5s ease;
 }
 
@@ -1688,11 +1696,12 @@ and (max-width: 414px) {
     padding-top: 12px;
     height: 100%;
     z-index: -1;
+    background: white;
 }
 
 #nav a, .mobileMenuItem {
+	color: rgb(84, 84, 84);
     text-decoration: none;
-    color: #000;
     display: block;
     padding: 14px 24px;
     font: 20px/1 'Montserrat', sans-serif;
@@ -1703,9 +1712,24 @@ and (max-width: 414px) {
     background-color: #eee;
 }
 
+
 #nav .projectsMenuContent ul {
-	height: 250px;
+	height: 270px;
 	overflow:scroll;
+	border-left: 2px solid rgb(47, 220, 229);
+	margin: 10%;
+	margin-left: 15%;
+	padding-left: 10%;
+	list-style-type: none;
+	font-size: 16px;
+}
+
+#nav .projectsMenuContent ul li {
+	padding-bottom: 5px;
+}
+
+#nav .projectsMenuContent ul li:hover {
+	color: rgb(47, 220, 229);
 }
 
 #nav .site-menu {
@@ -1820,7 +1844,7 @@ input#projectsMenu:checked ~ .projectsMenuContent {
 	#projectsContainer {
 		border: 1px solid black;
 		height: auto;
-		border: 4px solid rgb(68, 126, 235);
+		border: 4px solid rgb(47, 220, 229);
 		left: 50%;
 		transform: translate(-50%);
 		border-radius: 1%;
@@ -1831,7 +1855,7 @@ input#projectsMenu:checked ~ .projectsMenuContent {
 	}
 
 	.mobileLabel {
-		color: rgb(68, 126, 235);
+		color: rgb(47, 220, 229);
 		display: block;
 		font-size: 1.2em;
 		padding: 5px;
@@ -1839,7 +1863,7 @@ input#projectsMenu:checked ~ .projectsMenuContent {
 		line-height: 50px;
 		text-align: center;
 		background: rgb(245, 245, 245);
-		border-bottom: 1px solid rgb(68, 126, 235);
+		border-bottom: 1px solid rgb(47, 220, 229);
 		transition: color .5s, background .5s, transform .5s;
 	}
 
