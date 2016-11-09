@@ -154,8 +154,8 @@ nav {
 	top: 20%;
 	left: 50%;
 	transform: translate(-50%);
-	height: 800px;
-	width: 900px;
+	height: 50%;
+	width: 50%;
 	border: none;
 	font-size: 2em;
 	color: rgb(68, 126, 235);
@@ -1592,6 +1592,46 @@ font-size: 1em;
 }
 
 @media screen 
+and (min-width: 600px) 
+and (max-width: 1024px)
+{
+	nav {
+		background: #AB47BC;
+		color: #E1BEE7;
+	}
+
+	.navContainer .menu ul li a {
+		color: #E1BEE7;
+
+	}
+	.navContainer .nav-search .search-input {
+		background: #AB47BC;
+	}
+	.content header h2 {
+		color: #AB47BC;
+	}
+
+	.content > section {
+		width: 100%;
+	}
+
+	#projectsContainer .tabComponent label:hover {
+	color: #AB47BC;
+}
+
+.carousel-start:nth-of-type(1):checked ~ .tabComponent label:nth-of-type(1), .carousel-start:nth-of-type(2):checked ~ .tabComponent label:nth-of-type(2),
+.carousel-start:nth-of-type(3):checked ~ .tabComponent label:nth-of-type(3), .carousel-start:nth-of-type(4):checked ~ .tabComponent label:nth-of-type(4),
+.carousel-start:nth-of-type(5):checked ~ .tabComponent label:nth-of-type(5), .carousel-start:nth-of-type(6):checked ~ .tabComponent label:nth-of-type(6), 
+.carousel-start:nth-of-type(7):checked ~ .tabComponent label:nth-of-type(7), .carousel-start:nth-of-type(8):checked ~ .tabComponent label:nth-of-type(8),
+.carousel-start:nth-of-type(9):checked ~ .tabComponent label:nth-of-type(9), .carousel-start:nth-of-type(10):checked ~ .tabComponent label:nth-of-type(10),
+.carousel-start:nth-of-type(11):checked ~ .tabComponent label:nth-of-type(11), .carousel-start:nth-of-type(12):checked ~ .tabComponent label:nth-of-type(12),
+.carousel-start:nth-of-type(13):checked ~ .tabComponent label:nth-of-type(13), .carousel-start:nth-of-type(14):checked ~ .tabComponent label:nth-of-type(14)
+{
+	color: #AB47BC;
+}
+}
+
+@media screen 
 and (max-width: 414px) {
 
 	nav {
@@ -1820,6 +1860,10 @@ input#projectsMenu:checked ~ .projectsMenuContent {
 	.content header p {
 		width: 90%;
 		font-size: 1.2em;
+	}
+
+	.content header h2 {
+		color: rgb(47, 220, 229);
 	}
 
 	.content > section {
@@ -2062,6 +2106,14 @@ input#projectsMenu:checked ~ .projectsMenuContent {
 	.sidebar-profile {
   		width: 90%;
   	}
+
+  	.sidebar-profile h2 {
+  		width: 2em;
+  	}
+
+  	.sidebar-profile h2:first-child {
+  		margin: 0;
+	}
 
 	#skills {
 		width: 95%;
