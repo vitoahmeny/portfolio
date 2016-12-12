@@ -1,0 +1,39 @@
+.web-components-inner {
+  margin: auto;
+  width: 500px;
+}
+.web-components-inner .button {
+  display: inline-block;
+  font-size: 15px;
+  background-color: #7ECDD2;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  height: 30px;
+  box-shadow: 2px 2px 5px black;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  opacity: 1;
+}
+
+.web-components-inner .button:hover {
+	opacity: 0.75;
+}
+
+
+.web-components-inner .button-sm {
+	height: 20px;
+	font-size: 10px;
+	line-height: 20px;
+}
+
+
+
+.web-components-inner .button-lg {
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+}

@@ -1,0 +1,25 @@
+.questionnaire form {
+	width: 250px;
+	border: 1px solid #7ECDD2;
+	color: #7ECDD2;
+	margin: auto;
+	margin-top: 10%;
+	font-size: 20px;
+	box-shadow: 1px 1px 5px #7ECDD2;
+	padding: 10px 0 10px 20px;
+}
+
+
+.questionnaire div {
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+.questionnaire .other input {
+	border: 1px solid white;
+	border-bottom: 1px solid #7ECDD2;
+	margin-left: 5px;
+	outline: none;
+	font-size: 1em;
+	width: 60%;
+}

@@ -1,0 +1,48 @@
+.car-gallery div.container input{
+  
+  display:none;
+  
+}
+
+.car-gallery div.container img.small{
+  
+  background:black;
+  cursor:pointer;
+  float:left;
+  margin: 0;
+  position: relative;
+  transition: box-shadow 0.5s;
+  z-index:2;
+  padding: 5px;
+}
+
+.car-gallery div.container img.small:hover {
+  box-shadow: 1px 1px 20px black;
+}
+
+.car-gallery div.container img.large{
+  
+  display: block;
+  opacity:0;
+  position:absolute;
+  top:0;
+  transition: opacity 0.5s;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+
+}
+
+.car-gallery div.container input:nth-of-type(1):checked ~ .placeholder:nth-of-type(1) .large,
+.car-gallery div.container input:nth-of-type(2):checked ~ .placeholder:nth-of-type(2) .large,
+.car-gallery div.container input:nth-of-type(3):checked ~ .placeholder:nth-of-type(3) .large,
+.car-gallery div.container input:nth-of-type(4):checked ~ .placeholder:nth-of-type(4) .large,
+.car-gallery div.container input:nth-of-type(5):checked ~ .placeholder:nth-of-type(5) .large {
+  opacity:1;
+  z-index: 1;
+}
+
+.car-gallery .small{
+  width:120px;
+}

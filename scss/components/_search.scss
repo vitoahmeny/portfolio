@@ -1,0 +1,42 @@
+.search h3 {
+	text-align: center;
+	color: #7ECDD2;
+	font-size: 3em;
+}
+.search input {
+	width: 600px;
+	margin: auto;
+	height: 50px;
+	line-height: 50px;
+	font-size: 40px;
+	border: 1px solid #7ECDD2;
+	margin-left: 50px;
+}
+
+.search select {
+	width: 100px;
+	border: 1px solid #7ECDD2;
+	display: block;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+.search button {
+	line-height: 40px;
+ 	font-size: 26px;
+ 	background-color: #7ECDD2;
+ 	color: white;
+ 	width: 200px;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	border: none;
+ 	box-shadow: 2px 2px 5px black;
+ 	opacity: 1;
+ 	margin-left: 250px;
+ 	margin-top: 20px;
+
+}
+
+.search button:hover {
+	opacity: 0.7;
+}

@@ -1,0 +1,54 @@
+.scheduling-form {
+	width: 350px;
+	margin: auto;
+	padding: 20px 0 20px 20px;
+	border: 1px solid black;
+	box-shadow: 1px 1px 5px black;
+	position: relative;
+	font-size: 1.2em;
+	background: white;
+	color: black;
+}
+
+.scheduling-form div {
+	width: 90%;
+	margin-bottom: 20px;
+
+}
+
+.scheduling-form input {
+	width: 60%;
+	float: right;
+	margin-right: -5px;
+	height: 20px;
+
+}
+
+.scheduling-form .invalidInput {
+	background-color: #ee6060;
+	opacity: 0.5;
+}
+
+.scheduling-form #scheduling-dateCheck {
+	position: absolute;
+	right: 10px;
+}
+
+.scheduling-form #scheduling-errorMessage {
+	width: 40%;
+	color: #ee6060;
+	font-size: 12px;
+	float: right;
+	position: absolute;
+	top: 50px;
+	right: 8%;
+}
+
+.scheduling-form textarea {
+	height: 100px;
+	width:90%;
+}
+
+.scheduling-form select {
+	margin-top: 10px;
+}

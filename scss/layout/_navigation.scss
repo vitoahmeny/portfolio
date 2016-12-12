@@ -1,0 +1,171 @@
+@import '../base/base';
+@import '../abstracts/mixin';
+
+nav {
+	width: 100%;
+	background: $primary-color;
+	position: fixed;
+	display: block;
+	z-index: 10000;
+	color: rgb(173, 204, 251);
+}
+
+.navContainer {
+	@include flexbox;
+	justify-content: space-around;
+	align-items: center;
+
+	& div:first-child p {
+		height: 55px;
+		line-height: 55px;
+		margin: 0;
+		padding: 0;
+		color: white;
+		font-size: 1.5em;	
+	}
+
+	& ul {
+		list-style: none;
+		margin: 0;
+
+		& li {
+			display: inline-block;
+			font-size: 1.1em;
+		}
+	}
+
+	& .menu {
+		width: 58%;
+		text-align: center;
+	}
+
+	& .menu ul li a {
+	text-decoration: none;
+	padding: 5px 18px;
+	color: rgb(173, 204, 251);
+
+	&:hover {
+	color: white;
+	transition: color 0.5s;
+	}
+}
+
+}
+
+.nav-search {
+	position: relative;
+	& .search-text {
+	position: absolute;
+	margin: 0;
+	top: 2px;
+	left: 3px;
+	z-index: -100;
+	}
+
+	& .search-input {
+	border: none;
+	border-bottom: 1px solid rgb(173, 204, 251);
+	background: rgb(68, 126, 235);
+	outline: none;
+	color: white;
+	font-size: 1em;
+	padding-bottom: 5px;
+
+	&:focus {
+		height: 26px;
+	}
+
+
+	}
+
+}
+
+.search-input::-webkit-input-placeholder, .search-input::-moz-placeholder, .search-input::-ms-input-placeholder
+ 
+{
+	color: rgb(173, 204, 251);
+}
+
+
+.bar {
+	position: relative;
+	display: block;
+	&:before, &:after {
+	content: "";
+	height: 2px;
+	width: 0;
+	border-bottom: 1px;
+	background: white; 
+	position: absolute;
+	bottom: 0.5px;
+	transition: 0.2s ease all;
+}
+
+	&:before {
+	left: 50%;
+}
+
+	&:after {
+	right: 50%;
+}
+}
+
+.search-input:focus ~ .bar:before, .search-input:focus ~ .bar:after {
+	width: 50%;
+}
+
+.search-icon {
+	position: absolute;
+	right: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.navContainer .nav-search .search-input:focus ~ .search-text {
+	transform: translateY(-12px);
+	transition: transform 0.2s;
+	font-size: 0.8em;
+	z-index: 100;
+}
+
+.modal {
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%);
+	height: 50%;
+	width: 50%;
+	border: none;
+	font-size: 2em;
+	color: rgb(68, 126, 235);
+	text-align: center;
+	font-weight: 100;
+	background: white;
+	@include hidden;
+	transition: opacity 0.5s ease-in;
+	-webkit-transition: opacity 0.5s ease-in;
+	-moz-transition: opacity 0.5s ease-in;
+	&:target {
+		@include visible;
+	}
+
+
+}
+
+.close {
+	position: absolute;
+	top: 5%;
+	right: 2%;
+	font-weight: 900;
+	padding: 5px 15px;
+	text-decoration: none;
+	color: rgb(68, 126, 235);
+	&:hover {
+	background: $white;
+	transition: background 0.2s;
+	}
+}
+
+.modal-message {
+	margin-top: 30%;
+}

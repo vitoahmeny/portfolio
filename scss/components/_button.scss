@@ -1,0 +1,5 @@
+button {
+	&.demo {
+		@include regular-button(20px);
+	}
+}

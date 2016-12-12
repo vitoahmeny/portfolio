@@ -1,0 +1,552 @@
+@media screen 
+and (max-width: 414px) {
+
+	nav {
+		display: none;
+	}
+
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobileSlide {
+	display: block;
+}
+
+#fix-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(47, 220, 229);
+}
+
+#fix-bar .logo {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    transform: translate3d(-50%, 0, 0);
+    transition: transform 0.5s ease;
+    top: -10px;
+}
+
+#fix-bar .logo a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 24px;
+    width: 60px;
+    height: 24px;
+    padding: 18px 16px 18px 24px;
+    box-sizing: content-box;
+}
+
+#fix-bar .push {
+    position: relative;
+    left: 0;
+    height: 100%;
+    background-color: rgb(47, 220, 229);
+    transition: transform 0.5s ease;
+}
+
+.hamburguer {
+    width: 72px;
+    height: 60px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburguer span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 24px;
+    background: #fff;
+    opacity: 1;
+    left: 24px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+}
+
+.hamburguer span:nth-child(1) {
+    top: 20px;
+}
+
+.hamburguer span:nth-child(2),
+.hamburguer span:nth-child(3) {
+    top: 28px;
+}
+
+.hamburguer span:nth-child(4) {
+    top: 36px;
+}
+
+#canvas {
+    padding-top: 50px;
+    overflow: hidden;
+    height: 100%;
+}
+
+#nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    transform: translate3d(-50%, 0, 0);
+    transition: transform 0.5s ease;
+    padding-top: 12px;
+    height: 100%;
+    z-index: -1;
+    background: white;
+}
+
+#nav a, .mobileMenuItem {
+	color: rgb(84, 84, 84);
+    text-decoration: none;
+    display: block;
+    padding: 14px 24px;
+    font: 20px/1 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#nav a:hover, .mobileMenuItem:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+#nav .projectsMenuContent ul {
+	height: 270px;
+	overflow:scroll;
+	border-left: 2px solid rgb(47, 220, 229);
+	margin: 10%;
+	margin-left: 15%;
+	padding-left: 10%;
+	list-style-type: none;
+	font-size: 18px;
+}
+
+#nav .projectsMenuContent ul li {
+	padding-bottom: 10px;
+}
+
+#nav .projectsMenuContent ul li:hover {
+	color: rgb(47, 220, 229);
+}
+
+#nav .site-menu {
+    position: relative;
+    min-height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#nav .copy {
+    position: absolute;
+    bottom: 0;
+    padding: 16px 24px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#content {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform: translate3d(0, 0, 0);
+}
+
+.mask {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease, z-index 0s 0.5s;
+    background-color: rgba(0,0,0,0.5);
+}
+
+input#show-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+input#show-menu:checked ~ #fix-bar .push {
+    transform: translate3d(250px, 0, 0);
+}
+
+input#show-menu:checked ~ #fix-bar .hamburguer span:nth-child(1),
+input#show-menu:checked ~ #fix-bar .hamburguer span:nth-child(4) {
+    top: 28px;
+    width: 0;
+    left: 50%;
+}
+
+input#show-menu:checked ~ #fix-bar .hamburguer span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+input#show-menu:checked ~ #fix-bar .hamburguer span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+input#show-menu:checked ~ #canvas .mask {
+    z-index: 1;
+    opacity: 1;
+    transform: translate3d(250px, 0, 0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+input#show-menu:checked ~ #canvas #nav,
+input#show-menu:checked ~ #fix-bar .logo {
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+}
+
+input#show-menu:checked ~ #canvas #content {
+    transform: translate3d(250px, 0, 0);
+}
+
+.projectsMenuContent {
+	display: none;
+}
+
+input#projectsMenu:checked ~ .projectsMenuContent {
+	display: block;
+}
+
+	.content header p {
+		width: 90%;
+		font-size: 1.2em;
+	}
+
+	.content header h2 {
+		color: rgb(47, 220, 229);
+	}
+
+	.content > section {
+		width: 90%;
+	}
+
+	#about {
+		width: 90%;
+		margin-top: 70px;
+	}
+
+	#about p {
+		width: 90%;
+		font-size: 1.2em;
+	}
+
+	#projects {
+		width: 95%;
+		box-sizing: border-box;
+	}
+
+	#projectsContainer {
+		border: 1px solid black;
+		height: auto;
+		border: 4px solid rgb(47, 220, 229);
+		left: 50%;
+		transform: translate(-50%);
+		border-radius: 1%;
+	}
+
+	#projectsContainer .tabComponent {
+		display: none;
+	}
+
+	.mobileLabel {
+		color: rgb(47, 220, 229);
+		display: block;
+		font-size: 1.2em;
+		padding: 5px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		background: rgb(245, 245, 245);
+		border-bottom: 1px solid rgb(47, 220, 229);
+		transition: color .5s, background .5s, transform .5s;
+	}
+
+	.mobileLabel:hover {
+		color: black;
+	}
+
+.carousel-start:nth-of-type(1):checked ~ .mobileLabel:nth-of-type(1), .carousel-start:nth-of-type(2):checked ~ .mobileLabel:nth-of-type(2),
+.carousel-start:nth-of-type(3):checked ~ .mobileLabel:nth-of-type(3), .carousel-start:nth-of-type(4):checked ~ .mobileLabel:nth-of-type(4),
+.carousel-start:nth-of-type(5):checked ~ .mobileLabel:nth-of-type(5), .carousel-start:nth-of-type(6):checked ~ .mobileLabel:nth-of-type(6), 
+.carousel-start:nth-of-type(7):checked ~ .mobileLabel:nth-of-type(7), .carousel-start:nth-of-type(8):checked ~ .mobileLabel:nth-of-type(8),
+.carousel-start:nth-of-type(9):checked ~ .mobileLabel:nth-of-type(9), .carousel-start:nth-of-type(10):checked ~ .mobileLabel:nth-of-type(10),
+.carousel-start:nth-of-type(11):checked ~ .mobileLabel:nth-of-type(11), .carousel-start:nth-of-type(12):checked ~ .mobileLabel:nth-of-type(12),
+.carousel-start:nth-of-type(13):checked ~ .mobileLabel:nth-of-type(13), .carousel-start:nth-of-type(14):checked ~ .mobileLabel:nth-of-type(14)
+
+{	
+	color: black;
+	background: white;
+	border-bottom: none;
+}
+
+	.carousel-inner {
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		overflow: hidden;
+		top: 0;
+		box-sizing: border-box;
+		width: 100%;
+		height: 500px;
+		transition: border-left .5s;
+	}
+	.carousel-start:nth-of-type(1):checked ~ .carousel-inner:nth-of-type(1), .carousel-start:nth-of-type(2):checked ~ .carousel-inner:nth-of-type(2),
+	.carousel-start:nth-of-type(3):checked ~ .carousel-inner:nth-of-type(3), .carousel-start:nth-of-type(4):checked ~ .carousel-inner:nth-of-type(4),
+	.carousel-start:nth-of-type(5):checked ~ .carousel-inner:nth-of-type(5), .carousel-start:nth-of-type(6):checked ~ .carousel-inner:nth-of-type(6),
+	.carousel-start:nth-of-type(7):checked ~ .carousel-inner:nth-of-type(7), .carousel-start:nth-of-type(8):checked ~ .carousel-inner:nth-of-type(8),
+	.carousel-start:nth-of-type(9):checked ~ .carousel-inner:nth-of-type(9), .carousel-start:nth-of-type(10):checked ~ .carousel-inner:nth-of-type(10),
+	.carousel-start:nth-of-type(11):checked ~ .carousel-inner:nth-of-type(11), .carousel-start:nth-of-type(12):checked ~ .carousel-inner:nth-of-type(12),
+	.carousel-start:nth-of-type(13):checked ~ .carousel-inner:nth-of-type(13), .carousel-start:nth-of-type(14):checked ~ .carousel-inner:nth-of-type(14)
+	{
+		display: block;
+	}
+
+	.item-wrapper {
+	width: 250px;
+	}
+
+	.calculator {
+		height: 650px;
+	}
+
+	.business-card {
+		width: 95%;
+	}
+
+	.business-card .footer .footerText p {
+		margin-top: 10px;
+	}
+
+	.business-card label {
+		width: 100%;
+	}
+
+	.business-card .card > div {
+		width: 100%;
+	}
+	.business-card .card .heading p, .card .heading small {
+  	font-weight: 100;
+  	font-size: 1em;
+  	margin-top: 0;
+  	padding-top: 0;
+  	padding-bottom: 0;
+  	margin-bottom: 0;
+}
+	.business-card .description {
+ 		margin-right: 10px;
+ 		margin-top: 10px;
+ 		margin-bottom: 5px;
+}
+	.business-card .web a {
+  display: inline-block;
+  text-decoration: none;
+  color: #cd00cd;
+}
+.business-card .footer .icons {
+	margin-top: 10px;
+ 	margin-left: 0px;
+}
+
+.forms, .sign-up, .profile {
+		width: 95%;
+		height: 600px;
+	}
+
+
+	#cvvImg {
+		width: 70%;
+		position: absolute;
+		left: 0;
+	}
+
+	.web-components {
+		width: 95%;
+	}
+
+	.web-components-inner {
+		width: 100%;
+	}
+
+	.web-components-inner * {
+		display: block;
+	}
+
+	.web-components-inner .button-lg {
+		font-size: 1.5em;
+		margin-top: 5%;
+	}
+
+	.signup_form {
+		width: 300px;
+	}
+
+	.scheduling {
+		width: 90%;
+	}
+
+	.scheduling-form {
+		width: 300px;
+	}
+
+
+	.scheduling-form input {
+		width: 65%;
+	}
+
+	.scheduling-form select {
+		width: 100%;
+	}
+
+	.shipping {
+		width: 100%;
+		overflow-y: scroll;
+	}
+
+	.carousel-item-shipping-form {
+		width: 100%;
+	}
+
+	.shipping .carousel-item-shipping-form form {
+		width: 90%;
+	}
+	
+
+	.search {
+		width: 90%;
+	}
+
+	.search .carousel-item-search-form {
+		width: 100%;
+	}
+
+	.search input {
+		width: 90%;
+		margin-left: 5%; 
+
+	}
+	.search button {
+		width: 36%;
+		left: 32%;
+		font-size: 2em;
+		top: 85%;
+		margin-left: 32%;
+ 		margin-top: 50px;
+	}
+
+	.search select {
+		margin-left: 5%;
+	}
+
+	.car-gallery {
+		width: 100%;
+	}
+
+	.car-gallery .carousel-item-simple-gallery {
+		width: 100%;
+	}
+
+	.car-gallery .small {
+    width: 50px;
+  }
+
+  	.carousel-item-profile-card {
+  		width: 100%;
+  	}
+
+	.sidebar-profile {
+  		width: 90%;
+  	}
+
+  	.sidebar-profile h2 {
+  		width: 2em;
+  	}
+
+  	.sidebar-profile h2:first-child {
+  		margin: 0;
+	}
+
+	#skills {
+		width: 95%;
+	}
+
+	#svgContainer {
+		display: flex;
+		width: 100%;
+	}
+
+	.frontendContainer, .backendContainer, .othersContainer {
+		width: 100%;
+		font-size: 0.8em;
+	}
+
+	.frontendRects {
+
+	}
+
+	#contact {
+		height: 750px;
+	}
+
+	.contact-item {
+		width: 100%;
+	}
+
+	.shopping-cart-img 
+	{
+		width: 300px;
+	}
+}
+
+
+@media screen 
+and (max-width: 320px) {
+
+.scheduling-form {
+		width: 250px;
+	}
+
+.shipping button[type=submit] {
+	font-size: 0.7em;
+}
+
+.login {
+	width: 90%;
+}
+
+.login .carousel-item-login-form {
+	width: 100%;
+}
+
+.login form {
+	margin: 0;
+	width: 250px;
+	padding: 10px;
+}
+
+.login button {
+	font-size: 20px;
+	width: 100%;
+}
+
+.search button{
+	font-size: 1.5em;
+}
+}

@@ -1,0 +1,149 @@
+.business-card {
+  color: white;
+  font-size: 14px;
+}
+
+.business-card label {
+  cursor: pointer;
+  display: block;
+  height: 375px;
+  width: 630px;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+
+  position: absolute;
+
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+}
+
+.business-card .card {
+   height: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+
+  width: 100%;
+  z-index: 1;  
+}
+
+.business-card .card > div {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  border-radius: 5px;
+  height: 100%;
+  position: absolute;
+  width: 630px;
+  background: url(../img/bg1.png);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.business-card .card .back {
+  background: gray;
+  color: white;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  
+}
+
+.business-card label:hover .card {
+  
+  box-shadow: 1px 1px 2px purple ;
+  transform: rotateX(15deg);
+  -webkit-transform: rotateX(15deg);  
+  -moz-transform: rotateX(15deg);  
+  -o-transform: rotateX(15deg);  
+}
+
+.business-card input {
+  
+  display: none;
+  
+}
+
+.business-card input:checked + .card {
+  
+  transform: rotateX(180deg);
+  -webkit-transform:rotateX(180deg);
+  
+}
+
+.business-card label:hover input:checked + .card {
+  
+  box-shadow: 1px 1px 5px black;
+  transform: rotateX(165deg);
+  -webkit-backface-visibility: hidden;
+  
+}
+
+.business-card .card .heading p {
+  font-weight: 100;
+  font-size: 3em;
+  margin-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.business-card .heading small {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.business-card .description {
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.business-card .web a {
+  display: inline-block;
+  margin-right: 50px;
+  text-decoration: none;
+  color: #cd00cd;
+  margin-bottom: 30px;
+}
+
+.business-card .footer {
+}
+
+.business-card .footer img {
+	margin-right: 15px;
+}
+
+.business-card .footer > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.business-card .footer .footerText a {
+  color: #cd00cd;
+  text-decoration: none;
+}
+.business-card .footer .footerText p {
+  line-height: 0.5;
+}
+
+.business-card .footer .icons {
+  margin-left: 165px;
+}

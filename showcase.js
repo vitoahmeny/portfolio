@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		for (var i = 0; i < array.length; i++) {
 			array[i].removeAttribute("checked")
 			if (i === k) {
-				array[i].setAttribute("checked", "")
+				array[i].setAttribute("checked", "");
 			}
 		}
 	}

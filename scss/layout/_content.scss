@@ -1,0 +1,277 @@
+@import '../base/base';
+@import '../abstracts/mixin';
+
+html,body
+{
+    @include reset-margin;
+	font-family: 'lato', sans-serif;
+	background: rgb(243, 243, 243);
+	color: rgb(84, 84, 84);
+}
+
+
+
+.content > section {
+	width: 80%;
+	margin: 50px auto 0 auto;
+	padding-bottom: 50px;
+	z-index: 2;
+}
+
+#about {
+	margin-top: 100px;
+}
+
+#projectsContainer {
+	width: 100%;
+	border-radius: 2px;
+	margin-top: 50px;
+	height: 900px;
+	position: relative;
+	background: white;
+	
+	& .tabComponent 
+	{
+	width: 25%;
+	height: 100%;
+	font-size: 1.1em;
+	font-weight: 400;
+	background: rgb(243, 243, 243);
+	text-align: right;
+	overflow: scroll;
+
+	& input {
+	display: none;
+	}
+
+	& label {
+	display: block;
+	padding: 20px 30px;
+	&:hover {
+		color: $primary-color;
+	}
+	}
+	}
+}
+
+.carousel-start:nth-of-type(1):checked ~ .tabComponent label:nth-of-type(1), .carousel-start:nth-of-type(2):checked ~ .tabComponent label:nth-of-type(2),
+.carousel-start:nth-of-type(3):checked ~ .tabComponent label:nth-of-type(3), .carousel-start:nth-of-type(4):checked ~ .tabComponent label:nth-of-type(4),
+.carousel-start:nth-of-type(5):checked ~ .tabComponent label:nth-of-type(5), .carousel-start:nth-of-type(6):checked ~ .tabComponent label:nth-of-type(6), 
+.carousel-start:nth-of-type(7):checked ~ .tabComponent label:nth-of-type(7), .carousel-start:nth-of-type(8):checked ~ .tabComponent label:nth-of-type(8),
+.carousel-start:nth-of-type(9):checked ~ .tabComponent label:nth-of-type(9), .carousel-start:nth-of-type(10):checked ~ .tabComponent label:nth-of-type(10),
+.carousel-start:nth-of-type(11):checked ~ .tabComponent label:nth-of-type(11), .carousel-start:nth-of-type(12):checked ~ .tabComponent label:nth-of-type(12),
+.carousel-start:nth-of-type(13):checked ~ .tabComponent label:nth-of-type(13), .carousel-start:nth-of-type(14):checked ~ .tabComponent label:nth-of-type(14)
+
+{	
+	color: $primary-color;
+	background: white;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.carousel-start:nth-of-type(1):checked ~ .carousel-inner:nth-of-type(1), .carousel-start:nth-of-type(2):checked ~ .carousel-inner:nth-of-type(2),
+.carousel-start:nth-of-type(3):checked ~ .carousel-inner:nth-of-type(3), .carousel-start:nth-of-type(4):checked ~ .carousel-inner:nth-of-type(4),
+.carousel-start:nth-of-type(5):checked ~ .carousel-inner:nth-of-type(5), .carousel-start:nth-of-type(6):checked ~ .carousel-inner:nth-of-type(6),
+.carousel-start:nth-of-type(7):checked ~ .carousel-inner:nth-of-type(7), .carousel-start:nth-of-type(8):checked ~ .carousel-inner:nth-of-type(8),
+.carousel-start:nth-of-type(9):checked ~ .carousel-inner:nth-of-type(9), .carousel-start:nth-of-type(10):checked ~ .carousel-inner:nth-of-type(10),
+.carousel-start:nth-of-type(11):checked ~ .carousel-inner:nth-of-type(11), .carousel-start:nth-of-type(12):checked ~ .carousel-inner:nth-of-type(12),
+.carousel-start:nth-of-type(13):checked ~ .carousel-inner:nth-of-type(13), .carousel-start:nth-of-type(14):checked ~ .carousel-inner:nth-of-type(14)
+
+{
+	display: block;
+}
+
+#skills {
+	position: relative;
+}
+
+#skills header {
+	height: 200px;
+}
+
+.expertise {
+	position: relative;
+	transform: translate(-50%);
+	background: rgb(58, 58, 58);
+	color: rgb(210, 210, 210);
+	font-size: 0.8em;
+	border-radius: 5%;
+	padding: 0 2%;
+	box-shadow: 0px 0px 2px rgb(58, 58, 58);
+	opacity: 0;
+	transition: opacity 0.2s ease-in;
+
+	&:after {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	@include align-center;
+	border-color: rgb(58, 58, 58) transparent transparent transparent;
+	}
+}
+
+.frontendExpertise {
+	position: absolute;
+	background: rgb(58, 58, 58);
+	color: rgb(210, 210, 210);
+	border-radius: 5%;
+	box-shadow: 0px 0px 2px rgb(58, 58, 58);
+	transform: translate(-50%);
+	transition: opacity 0.2s ease-in;
+	padding: 0 1.5%;
+	height: 30px;
+	line-height: 30px;
+	opacity: 0;
+
+	&:after {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	top: 100%;
+	@include align-center;
+	border-color: rgb(58, 58, 58) transparent transparent transparent;
+	}
+	&:nth-child(1) {
+	left: 44%;
+	top: 120px;
+}
+
+	&:nth-child(2) {
+		left: 54%;
+		top: 180px;
+	}
+	
+	&:nth-child(3) {
+		left: 64%;
+		top: 120px;
+	}
+	
+	&:nth-child(4) {
+		left: 74%;
+		top: 180px;
+	}
+	
+	&:nth-child(5) {
+		left: 84%;
+		top: 245px;
+	}
+
+}
+
+.svgContainer {
+	background: white;
+	padding-bottom: 100px;
+}
+
+.skill-svg {
+	background: white;
+	width: 100%;
+	height: 100px;
+}
+
+.frontendContainer, .backendContainer, .othersContainer {
+	width: 49%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.othersContainer {
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.frontend-svg, .backend-svg, .others-svg {
+	width: 100%;
+	height: 420px;
+}
+
+.skill-category {
+	top: 100px;
+}
+
+.rotate-text-list {
+	list-style: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0;
+	left: 48%;
+
+	& li {
+	width: 14%;
+	display: inline-block;
+	transform: rotate(50deg);
+	transform-origin: 0% 0%;
+	margin-left: -4%;
+	}
+}
+
+.othersContainer .rotate-text-list {
+	bottom: -20px;
+}
+
+
+
+.contact-item {
+	margin-top: 50px;
+	position: relative;
+	height: 375px;
+	left: 50%;
+	width: 630px;
+	transform: translate(-50%);
+}
+
+#contact {
+	height: 600px;
+}
+
+@media screen 
+and (min-width: 600px) 
+and (max-width: 1024px)
+{
+	nav {
+		background: #AB47BC;
+		color: #E1BEE7;
+	}
+
+	.navContainer .menu ul li a {
+		color: #E1BEE7;
+
+	}
+	.navContainer .nav-search .search-input {
+		background: #AB47BC;
+	}
+	.content header h2 {
+		color: #AB47BC;
+	}
+
+	.content > section {
+		width: 100%;
+	}
+
+	#projectsContainer .tabComponent label:hover {
+	color: #AB47BC;
+
+}
+
+.carousel-start:nth-of-type(1):checked ~ .tabComponent label:nth-of-type(1), .carousel-start:nth-of-type(2):checked ~ .tabComponent label:nth-of-type(2),
+.carousel-start:nth-of-type(3):checked ~ .tabComponent label:nth-of-type(3), .carousel-start:nth-of-type(4):checked ~ .tabComponent label:nth-of-type(4),
+.carousel-start:nth-of-type(5):checked ~ .tabComponent label:nth-of-type(5), .carousel-start:nth-of-type(6):checked ~ .tabComponent label:nth-of-type(6), 
+.carousel-start:nth-of-type(7):checked ~ .tabComponent label:nth-of-type(7), .carousel-start:nth-of-type(8):checked ~ .tabComponent label:nth-of-type(8),
+.carousel-start:nth-of-type(9):checked ~ .tabComponent label:nth-of-type(9), .carousel-start:nth-of-type(10):checked ~ .tabComponent label:nth-of-type(10),
+.carousel-start:nth-of-type(11):checked ~ .tabComponent label:nth-of-type(11), .carousel-start:nth-of-type(12):checked ~ .tabComponent label:nth-of-type(12),
+.carousel-start:nth-of-type(13):checked ~ .tabComponent label:nth-of-type(13), .carousel-start:nth-of-type(14):checked ~ .tabComponent label:nth-of-type(14)
+{
+	color: #AB47BC;
+}
+
+	.shopping-cart-img 
+	{
+		width: 400px;
+	}
+}
+
+

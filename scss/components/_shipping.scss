@@ -1,0 +1,63 @@
+.shipping form {
+	width: 400px;
+	margin: auto;
+	border: 1px solid #7ECDD2;
+	padding: 5% 2% 5% 5%;
+}
+
+.shipping h1 {
+	color: #7ECDD2;
+	text-align: center;
+}
+
+.shipping-section input {
+	width: 95%;
+	outline: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 26px;
+	font-size: 1em;
+	padding-left: 5px;
+}
+
+.shipping #checkbox {
+	margin-top: 10px;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+
+.shipping #shippingBillingError {
+	display: block;
+	margin-top: 10px;
+	font-size: 0.8em;
+	color: #ee6060;
+}
+
+.shipping .shortInput div {
+	display: inline-block;
+	width: 48%;
+	margin-right: 2px;
+}
+
+.shipping #buttonLine {
+	display: block;
+}
+
+.shipping button {
+	display: inline-block;
+	font-size: 1em;
+  	background-color: #7ECDD2;
+	color: white;
+	text-align: center;
+	border: none;
+	opacity: 1;
+	line-height: 35px;
+	margin-top: 20px;
+	border-radius: 5px;
+	width: 40%;
+	margin-left: 5%;
+}
+
+.shipping button:hover {
+	opacity: 0.7;
+}

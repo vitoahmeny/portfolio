@@ -1,0 +1,107 @@
+.credit-card {
+	width: 300px;
+	margin: auto;
+	border: 2px solid #f2f2f2;
+	padding: 0;
+	margin-top: 8%;
+	color: #606060;
+	background: white;
+
+}
+
+.credit-card h2 {
+	width: 100%;
+	margin: 0;
+	padding: 10% 0;
+	background-color: #f2f2f2;
+	text-align: center;
+	font-weight: 100;
+	}
+
+.credit-card label, .credit-card input {
+	display: block;
+	margin-bottom: 15px;
+	margin-left: 10%;
+	width: 78%;
+}
+
+.credit-card img	{
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.credit-card #notEnoughNumbers {
+	display: inline;
+	float: right;
+	font-size: 0.7em;
+	color: #7ECDD2;
+	margin-right: 35px;
+	margin-top: 3px;
+}
+
+.credit-card input {
+	height: 25px;
+	font-size: 1em;
+}
+
+.credit-card .invalidInput {
+	background-color: #ee6060;
+	opacity: 0.5;
+	outline: none;
+}
+
+.credit-card label[for="cvv"] {
+	width: 40%;
+	display: inline-block;
+}
+
+.credit-card #cvvImg {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	width: 455px;
+	display: none;
+}
+
+.credit-card #cvv_explained {
+	float: right;
+	color: #7ECDD2;
+	font-size: 0.7em;
+	width: 30%;
+	margin-top: 2px;
+}
+
+
+.credit-card button {
+font-size: 1em;
+  background-color: #7ECDD2;
+  color: white;
+  text-align: center;
+  border: none;
+  height: 25px;
+  width: 78%;
+  height: 35px;
+  line-height: 30px;
+  opacity: 1;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  border-radius: 2px;
+  margin-left: 11%;
+}
+
+.credit-card .button:hover {
+	opacity: 0.75;
+}
+
+.credit-card #error {
+	font-size: 12px;
+	padding: 0;
+	color: #7ECDD2;
+	margin-left: 12%;
+}
+
+.credit-card #error:empty {
+	display: none;
+}

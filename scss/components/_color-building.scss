@@ -1,0 +1,34 @@
+.color-building-form {
+	width: 250px;
+	border: 1px solid #7A378B;
+	color: #7A378B;
+	margin: auto;
+	margin-top: 10%;
+	font-size: 15px;
+	box-shadow: 1px 1px 5px #7A378B;
+	padding: 10px 0 0 30px;
+	background-color: white;
+}
+
+.color-building-form h3 {
+	font-size: 22px;
+}
+
+.color-building-form label {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 80%;
+}
+
+.color-building-form input {
+	width: 85%;
+	margin-top: 10px;
+}
+
+.color-building-form textarea {
+	width: 85%;
+	height: 100px;
+	border: none;
+	margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+@import '../base/base';
+
+header {
+	& h2 {
+		font-size: 2em;
+		font-weight: 100;
+		text-align: center;
+		color: $primary-color;
+	}
+
+	& p {
+	width: 70%;
+	margin: auto;
+	}
+}

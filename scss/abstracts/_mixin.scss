@@ -1,0 +1,111 @@
+//Center element with transform translate
+@import '../base/base';
+
+@mixin align-center {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	transform: translate(-50%);
+}
+
+// @include align-center();
+
+@mixin vertical-align {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+  	border-radius: $radius;
+}
+
+@mixin box-sizing($type){
+	-webkit-box-sizing:$type;
+	-moz-box-sizing:$type;
+	-ms-box-sizing:$type;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+	-webkit-box-sizing:$top, $left, $blur, $color;
+	-moz-box-sizing:$top, $left, $blur, $color;
+	-ms-box-sizing:$top, $left, $blur, $color;
+}
+
+@mixin regular-button($font-size) {
+	font-size: $font-size;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	color: white;
+	background: #7ECDD2;
+	height: $font-size * 2;
+	line-height: $font-size * 2;
+	opacity: 1;
+	padding: 0 20px;
+	@include border-radius(5%);
+	&:hover {
+		opacity: .7;
+	}
+}
+
+@mixin flexbox {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+}
+
+@mixin flex-direction($value: row) {
+	-webkit-flex-direction: $value;
+	-moz-flex-direction: $value;
+	-ms-flex-direction: $value;
+	flex-direction: $value;
+}
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin reset-margin {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+@mixin hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@mixin visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+@mixin header-h2 {
+	font-size: 2em;
+	font-weight: 100;
+	text-align: center;
+	color: $primary-color;
+}
+
+@mixin header-p {
+	width: 70%;
+	margin: auto;
+}
